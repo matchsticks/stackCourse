@@ -3,16 +3,35 @@
     <head>
         <title>This is a TITLE inside a HEAD</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            div {
+                background-color: skyblue;
+                width: 500px;
+                height: 50px;
+                text-align: center;
+                padding: 50px; /* this space is inside the element */
+                margin: 5px; /* this space is outside the element */
+                font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif; /*The first is the font it will choose but if computer doesn't has it it will keep checking with the subsequent ones*/
+                font-size: 20px; /*This attribute can be specified on different meassures such as cm, in, px, etc*/
+                font-weight: bolder;
+                border: 4px dashed black; /*These need to be in order ???*/
+            }
+        </style>
     </head>
     <body>  
         <h1>Welcome</h1> <!-- This element has only one CSS attribute set -->
-        <h1>This heading is an h1 styled thorugh a separate css file</h1><!-- This element has two CSS attributes set -->
+        <h1>This heading is an h1 styled through a separated css file</h1><!-- This element has two CSS attributes set -->
 
         <!-- Style attributes are hereditary, this means that if the style is moved to the BODY element, all childs will inherit this attribute as well -->
         <!-- We can also apply style to all tags from a single kind at the same time without adding style attributes on each one of them. From the HEAD tag we add a STYLE tag and add the tag element and the style attributes for it-->
-        <h2>This header will have the style attributes from the defined at the HEAD tag</h2>
+        <h2>
+            This header will have the style attributes from the file style.css
+        </h2>
+
+        <div>
+            This is a DIV tag. The style attributes of this tag are defined inside the HEAD tag
+        </div>
 
 
     </body>
-
 </html>
