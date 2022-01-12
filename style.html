@@ -9,6 +9,17 @@
                 text-align: right;
                 text-decoration: seagreen;
             } 
+            /*this h2Excluded ID is to specifically style a header excluding it from the above style*/
+            #h2Excluded {
+                color: blueviolet;
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            /* here we will create a class which applies when we want to style many elements. Class will beggin with period(.) */
+            .multiH3 {
+                color: coral;
+                font-family: sans-serif;
+            }
         </style>
     </head>
     <body>  
@@ -18,6 +29,9 @@
         <!-- Style attributes are hereditary, this means that if the style is moved to the BODY element, all childs will inherit this attribute as well -->
         <!-- We can also apply style to all tags from a single kind at the same time without adding style attributes on each one of them. From the HEAD tag we add a STYLE tag and add the tag element and the style attributes for it-->
         <h2>This header will have the style attributes from the defined at the HEAD tag</h2>
+        <h2 id="h2Excluded">This header has an ID and it is styled separatedly through its ID on the HEAD tag</h2>
+        <h3 class="multiH3">IDs can be used mutiple times but when more than one element needs to be included we can enclose it into a CLASS</h3>
+        <h3 class="multiH3">This is also included on the class "multiH3"</h3>
 
 
     </body>
