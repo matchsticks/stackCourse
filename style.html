@@ -1,7 +1,7 @@
 <!DOCTYPE  html>
 <html lang="es">
     <head>
-        <title>This is a TITLE inside a HEAD</title>
+        <title>IDs Classes and precedency for CSS</title>
         <style> 
         /* here we will define the style for tag H2 and it will apply to all H2 tags inside the document */
             h2 { 
@@ -9,7 +9,7 @@
                 text-align: right;
                 text-decoration: seagreen;
             } 
-            /*this h2Excluded ID is to specifically style a header excluding it from the above style*/
+            /*this h2Excluded ID is to specifically style a header excluding it from the above style. IDs will begin with # when defined*/
             #h2Excluded {
                 color: blueviolet;
                 text-align: center;
@@ -19,6 +19,15 @@
             .multiH3 {
                 color: coral;
                 font-family: sans-serif;
+            }
+            table {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td,th {
+                border: 1px solid black;
+                padding: 2px;
+                text-align: center;
             }
         </style>
     </head>
@@ -30,8 +39,56 @@
         <!-- We can also apply style to all tags from a single kind at the same time without adding style attributes on each one of them. From the HEAD tag we add a STYLE tag and add the tag element and the style attributes for it-->
         <h2>This header will have the style attributes from the defined at the HEAD tag</h2>
         <h2 id="h2Excluded">This header has an ID and it is styled separatedly through its ID on the HEAD tag</h2>
-        <h3 class="multiH3">IDs can be used mutiple times but when more than one element needs to be included we can enclose it into a CLASS</h3>
+        <h3 class="multiH3">IDs can be used mutiple times but when more than one element needs to be included we can enclose it into a CLASS, this element style was defined inside a class element at the HEAD tag</h3>
         <h3 class="multiH3">This is also included on the class "multiH3"</h3>
+
+        <div>
+            The precedency for the style definition is as follows:
+            <ol>
+                <li>Inline. Style defined at the same line will preceed all others</li>
+                <li>ID. ID will have the second precedency</li>
+                <li>Class. Class will have the third place</li>
+                <li>Type. Finally the type</li>
+            </ol>
+        </div>
+
+        <div>
+        <h1>CSS selectors</h1>
+        <p>To inherit style attributes we can use CSS selectors in order to pass some specific styles relying on relation, meaning that for example we can set the style for childrens of a determined tag by using one of these selectors. On the following table we have these selectors and its designation.
+        </p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>a,b</td>
+                    <td>Multiple element selector</td>
+                </tr>
+                <tr>
+                    <td>a b</td>
+                    <td>Descendant selector</td>
+                </tr>
+                <tr>
+                    <td>a > b</td>
+                    <td>Child selector</td>
+                </tr>
+                <tr>
+                    <td>a + b</td>
+                    <td>Adjacent sibling selector</td>
+                </tr>
+                <tr>
+                    <td>[a=b]</td>
+                    <td>Attribute selector</td>
+                </tr>
+                <tr>
+                    <td>a:b</td>
+                    <td>Pseudo class selector</td>
+                </tr>
+                <tr>
+                    <td>a::b</td>
+                    <td>Pseudoelement selector</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
 
 
     </body>
