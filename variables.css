@@ -1,0 +1,39 @@
+.Form_tag, .Anchor_tag {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  border: 3px dotted gold;
+  padding: 10px;
+  margin: 10px;
+}
+
+ul {
+  font-size: 14px;
+  color: red;
+  /*using a variable to define the color of different types of elements*/
+}
+
+ol {
+  font-size: 15px;
+  color: red;
+}
+
+/*In this case we can nest the attributes instead of using the CSS selectors*/
+div table {
+  border: 3px solid blue;
+  border-collapse: collapse;
+}
+div td, div th {
+  border: 1px solid black;
+  padding: 2px;
+  text-align: center;
+}
+
+.Anchor_tag {
+  background-color: gray;
+}
+
+.Form_tag {
+  background-color: hotpink;
+}
+
+/*# sourceMappingURL=variables.css.map */

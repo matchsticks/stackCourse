@@ -1,0 +1,42 @@
+$color: red;
+%container{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    border: 3px dotted gold;
+    padding: 10px;
+    margin: 10px;
+}
+
+ul {
+    font-size: 14px;
+    color: $color; /*using a variable to define the color of different types of elements*/
+}
+
+ol {
+    font-size: 15px;
+    color: $color;
+}
+
+
+/*In this case we can nest the attributes instead of using the CSS selectors*/
+div{
+    table {
+        border: 3px solid blue;
+        border-collapse: collapse;
+    }
+    td,th {
+        border: 1px solid black;
+        padding: 2px;
+        text-align: center;
+    }
+}
+
+.Anchor_tag{
+    @extend %container;
+    background-color: gray;
+}
+
+.Form_tag{
+    @extend %container;
+    background-color: hotpink;
+}

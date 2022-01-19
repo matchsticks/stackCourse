@@ -1,0 +1,107 @@
+<!DOCTYPE  html>
+<html lang="es">
+    <Head>
+        <title>SASS example</title>
+
+        <!-- For VIEWPORT which adapts the page to the size of the device we need to add the following META line -->
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+
+        <link rel="stylesheet" href="variables.css">
+    </Head>
+    <body>
+        <div id="container">
+            <div><h1>This is an H1 tag nested in a BODY/DIV/DIV tag</h1></div>
+            
+            <div>   <h6>This is an H6 tag which is the smallest heading on HTML</h6> </div>
+            
+            <div>
+            Ordered list:
+                <ol>
+                    <li>one item</li>
+                    <li>another item</li>
+                    <li>third item</li>
+                </ol>
+            </div>
+
+            <div>
+                Unordered list:
+                <ul>
+                    <li>one item</li>
+                    <li>another item</li>
+                    <li>another item, no matter which one since it is an unordered list</li>
+                </ul>
+            </div>
+
+            <div>
+                This is an image tag, image tag is self closing it doesn't need a closing tag
+
+                <img src="Millennium-Falcon.jpg" width="500"> <!-- This tag is self closing -->
+            </div>
+            
+            <div class="Anchor_tag">
+                This is an a (anchor) tag
+                <a href="https://static3.srcdn.com/wordpress/wp-content/uploads/2019/03/Millennium-Falcon.jpg"> Millenium falcon image on internet</a>
+            </div>
+
+            <div>
+            This is a table done by code on HTML
+            <!-- Here is where the table starts, father tag is TABLE, then THEAD and TBODY then TH and TD respectively -->
+            <table>
+                <thead>
+                    <th>Column one header</th>
+                    <th>Column two header</th>
+                    <th>Column three header</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1st Col 1st R</td>
+                        <td>2nd Col 1st R</td>
+                        <td>3rd Col 1st R</td>
+                    </tr>
+                    <tr>
+                        <td>1st Col 2nd R</td>
+                        <td>2nd Col 2nd R</td>
+                        <td>3rd Col 2nd R</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- This is where the TABLE ends -->
+            </div>
+            
+            <div class="Form_tag">
+                Form
+                <form>
+
+                    <div>
+                        <input type="text" placeholder="This is what user sees before filling with text" name="_variable_name">
+                        <input type="submit">
+                    </div>
+
+                    <div>
+                        <input type="password" name="_passw_var" placeholder="passw please">
+                    </div>
+
+                    <div>
+                        Favourite color?
+                        <input type="radio" name="_selected_color" value="red"> Red
+                        <input type="radio" name="_selected_color" value="blue"> Blue
+                    </div>
+
+                    <div>
+                        <input name="country" list="countries" placeholder="Select Country">
+                        <datalist id="countries">
+                            <option value="Af">
+                            <option value="Af1">
+                            <option value="Af2">
+                            <option value="B">
+                            <option value="C">
+                        </datalist>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+
+    </body>
+
+</html>
