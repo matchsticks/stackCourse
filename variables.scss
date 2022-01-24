@@ -1,5 +1,5 @@
-$color: red;
-%container{
+$color: red; /*This variable will work to control the color of elements*/
+%container{/*defining some common attributes and after we @extend-them to different classes or ids*/
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
     border: 3px dotted gold;
@@ -18,7 +18,7 @@ ol {
 }
 
 
-/*In this case we can nest the attributes instead of using the CSS selectors*/
+/*In this case we can nest the attributes instead of using the CSS selectors. SASS allows to define inheritance in a nesting way which is more intuitive*/
 div{
     table {
         border: 3px solid blue;
