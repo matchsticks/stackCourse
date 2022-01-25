@@ -1,0 +1,162 @@
+<!DOCTYPE  html>
+<html lang="es">
+    <head>
+        <title>HTML code camp course</title>
+
+        <!-- For VIEWPORT which adapts the page to the size of the device we need to add the following META line -->
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    </head>
+    <body>
+1   <h2>CatPhotoApp</h2>
+        
+        <p>You can use radio buttons for questions where you want the user to only give you one answer out of multiple options.</p>
+
+        <p>Radio buttons are a type of input.</p>
+            
+        <p>Each of your radio buttons can be nested within its own label element. By wrapping an input element inside of a label element it will automatically associate the radio button input with the label element surrounding it.</p>
+            
+        <p>All related radio buttons should have the same name attribute to create a radio button group. By creating a radio group, selecting any single radio button will automatically deselect the other buttons within the same group ensuring only one answer is provided by the user.</p>
+
+        <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+        <pre>
+            <input id="indoor" type="radio" name="indoor-outdoor">
+            <label for="indoor">Indoor</label>
+        </pre>            
+
+
+        <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+        <p>Things cats love:</p>
+        <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+        </ul>
+        <p>Top 3 things cats hate:</p>
+        <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+        </ol>
+        <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+            <input type="text" placeholder="cat photo URL" required>
+            <button type="submit">Submit</button>
+            <label> 
+                <input type="radio" name="indoor-outdoor">Indoor 
+            </label>
+              
+
+        </form>
+
+        <p>It is considered best practice to set a for attribute on the label element, with a value that matches the value of the id attribute of the input element. This allows assistive technologies to create a linked relationship between the label and the related input element. For example:</p>
+
+            <input id="indoor" type="radio" name="indoor-outdoor">
+            <label for="indoor">Indoor</label>
+
+        <p>We can also nest the input element within the label tags:</p>
+
+
+        <label for="indoor"> 
+            <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
+        </label>              
+
+        <h1>Checkboxes</h1>
+
+        <p>Forms commonly use checkboxes for questions that may have more than one answer.</p>
+        
+        <p>Checkboxes are a type of input.</p>
+            
+        <p>Each of your checkboxes can be nested within its own label element. By wrapping an input element inside of a label element it will automatically associate the checkbox input with the label element surrounding it.</p>
+            
+        <p>All related checkbox inputs should have the same name attribute.</p>
+            
+        <p>It is considered best practice to explicitly define the relationship between a checkbox input and its corresponding label by setting the for attribute on the label element to match the id attribute of the associated input element.</p>
+            
+        <p>Here's an example of a checkbox:</p>
+
+        <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+
+        <p>
+            Add to your form a set of three checkboxes. Each checkbox should be nested within its own label element. All three should share the name attribute of personality.
+        </p>
+
+        <h1>Use the value attribute with Radio Buttons and Checkboxes</h1>
+
+        <p>When a form gets submitted, the data is sent to the server and includes entries for the options selected. Inputs of type <code>radio</code> and <code>checkbox</code> report their values from the <code> value </code>attribute.</p>
+
+        <p>For example</p>
+
+        <label for="indoor">
+            <input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor
+        </label>
+        <label for="outdoor">
+            <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor
+        </label>
+          
+        <p>
+            Here, you have two radio inputs. When the user submits the form with the indoor option selected, the form data will include the line: indoor-outdoor=indoor. This is from the name and value attributes of the "indoor" input.
+        </p>
+
+        <p>
+            If you omit the value attribute, the submitted form data uses the default value, which is on. In this scenario, if the user clicked the "indoor" option and submitted the form, the resulting form data would be indoor-outdoor=on, which is not useful. So the value attribute needs to be set to something to identify the option.
+        </p>
+
+        <h1>Check Radio Buttons and Checkboxes by Default</h1>
+
+        <p>ou can set a checkbox or radio button to be checked by default using the <code>
+        checked</code> attribute.
+        Here's an example of the page structure. Your HTML code would go in the space between the two html tags.
+        To do this, just add the word checked to the inside of an input element. For example:</p>
+
+        <input type="radio" name="test-name" checked>
+        
+        <h1>Nest Many Elements within a Single div Element</h1>
+
+        <p>The div element, also known as a division element, is a general purpose container for other elements.</p>
+
+        <p>The div element is probably the most commonly used HTML element of all.</p>
+
+        <p>Just like any other non-self-closing element, you can open a div element with <div> and close it on another line with 
+        <code></div></code>.
+        </p>
+
+        <h2>Declare the Doctype of an HTML Document</h2>
+
+        <p>
+            The challenges so far have covered specific HTML elements and their uses. However, there are a few elements that give overall structure to your page, and should be included in every HTML document.
+        </p>
+
+        <p>
+            At the top of your document, you need to tell the browser which version of HTML your page is using. HTML is an evolving language, and is updated regularly. Most major browsers support the latest specification, which is HTML5. However, older web pages may use previous versions of the language.
+        </p>
+
+        <p>
+            You tell the browser this information by adding the <!DOCTYPE ...> tag on the first line, where the ... part is the version of HTML. For HTML5, you use <!DOCTYPE html>.
+        </p>
+
+        <p>
+            The ! and uppercase DOCTYPE is important, especially for older browsers. The html is not case sensitive.
+        </p>
+
+        <p>
+            Next, the rest of your HTML code needs to be wrapped in html tags. The opening <html> goes directly below the <!DOCTYPE html> line, and the closing </html> goes at the end of the page.
+        </p>
+
+        <p>
+            Here's an example of the page structure. Your HTML code would go in the space between the two html tags.
+        </p>
+
+        <h1>Define the Head and Body of an HTML Document</h1>
+
+        <p>You can add another level of organization in your HTML document within the html tags with the head and body elements. Any markup with information about your page would go into the head tag. Then any markup with the content of the page (what displays for a user) would go into the body tag.</p>
+
+        <p>Metadata elements, such as link, meta, title, and style, typically go inside the head element.</p>
+
+        <p>Here's an example of a page's layout:</p>
+
+        
+
+    </body>
+
+</html>
