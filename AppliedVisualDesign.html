@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Applied Visual Design</title>
+        <style>
+
+            body{
+                width: 1200px;
+                margin: 0px 50px 0px 50px;
+            }
+
+            pre {
+            font-size: 20px;
+            font-weight: bolder;
+            }
+            
+            .code-div{
+                border: black;
+                background: silver;
+                /* margin: 50px 50px 50px 0px; */
+                padding: 15px 15px 15px 15px;
+            }
+
+            code{
+                font-weight: bold;
+                font-size: x-large;
+                background: coral;
+            }
+
+        </style>        
+    </head>
+    <body>
+
+        <p style="font-size: larger;font-weight: bolder;">Visual design is a combination of typography, color theory, graphics, animation, page layout, and more to help deliver your unique message.</p>
+
+        <p style="font-size: larger;font-weight: bolder;">In this course, you'll learn how to apply these different elements of visual design to your webpages.</p>
+
+        <h1>Create Visual Balance Using the text-align Property</h1>
+
+        <p>This section of the curriculum focuses on Applied Visual Design. The first group of challenges build on the given card layout to show a number of core principles.</p>
+
+        <p>Text is often a large part of web content. CSS has several options for how to align it with the <code>text-align</code> property.</p>
+
+        <p><code>text-align: justify;</code> spaces the text so that each line has equal width.</p>
+
+        <p><code>text-align: center;</code> centers the text</p>
+
+        <p><code>text-align: right;</code> right-aligns the text</p>
+
+        <p><code>And text-align: left;</code> (the default) left-aligns the text.</p>
+
+        <p>
+            <pre>
+                &#60style>
+                    h4 {
+                  
+                    }
+                    p {
+                  
+                    }
+                    .links {
+                      margin-right: 20px;
+                  
+                    }
+                    .fullCard {
+                      border: 1px solid #ccc;
+                      border-radius: 5px;
+                      margin: 10px 5px;
+                      padding: 4px;
+                    }
+                    .cardContent {
+                      padding: 10px;
+                    }
+                  &#60/style>
+                  &#60div class="fullCard">
+                    &#60div class="cardContent">
+                      &#60div class="cardText">
+                        &#60h4 style="text-align: center;">Google&#60/h4>
+                        &#60p style="text-align: justify;">Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.&#60/p>
+                      &#60/div>
+                      &#60div class="cardLinks">
+                        &#60a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page&#60/a>
+                        &#60a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin&#60/a>
+                      &#60/div>
+                    &#60/div>
+                  &#60/div>
+            </pre>
+        </p>
+
+        <h1>Adjust the Width of an Element Using the width Property</h1>
+
+        <p>You can specify the <code>width</code> of an element using the width property in CSS. Values can be given in relative length units (such as <code>em</code>), absolute length units (such as <code>px</code>), or as a percentage of its containing parent element. Here's an example that changes the width of an image to 220px:</p>
+
+        <p>Add a <code>width</code> property to the entire card and set it to an absolute value of 245px. Use the <code>fullCard</code> class to select the element.</p>
+
+        <p>
+            <pre>
+                &#60style>
+                    h4 {
+                      text-align: center;
+                    }
+                    p {
+                      text-align: justify;
+                    }
+                    .links {
+                      margin-right: 20px;
+                      text-align: left;
+                    }
+                    .fullCard {
+                      width: 245px;
+                      border: 1px solid #ccc;
+                      border-radius: 5px;
+                      margin: 10px 5px;
+                      padding: 4px;
+                    }
+            </pre>
+        </p>
+
+        <h1>Adjust the Height of an Element Using the height Property</h1>
+
+        <p>You can specify the <code>height</code> of an element using the height property in CSS, similar to the <code>width</code> property. Here's an example that changes the height of an image to 20px:</p>
+
+        <p>Add a <code>height</code> property to the <code>h4</code> tag and set it to 25px.</p>
+
+        <p>Note: You may need to be at 100% zoom to pass the test on this challenge.</p>
+
+        <p>
+            <pre>
+                &#60style>
+                    h4 {
+                        text-align: center;
+                        height: 25px;
+                    }
+                    p {
+                      text-align: justify;
+                    }
+                    .links {
+                      margin-right: 20px;
+                      text-align: left;
+                    }
+                    .fullCard {
+                      width: 245px;
+                      border: 1px solid #ccc;
+                      border-radius: 5px;
+                      margin: 10px 5px;
+                      padding: 4px;
+                    }
+                    .cardContent {
+                      padding: 10px;
+                    }
+                  &#60/style>
+                  &#60div class="fullCard">
+                    &#60div class="cardContent">
+                      &#60div class="cardText">
+                        &#60h4>Google&#60/h4>
+            </pre>
+        </p>
+
+        <h1>Use the strong Tag to Make Text Bold</h1>
+
+        <p>To make text bold, you can use the <code>strong</code> tag. This is often used to draw attention to text and symbolize that it is important. With the <code>strong</code> tag, the browser applies the CSS of <code>font-weight: bold;</code> to the element.</p>
+
+        <p>Wrap a <code>strong</code> tag around the text <code>Stanford University</code> inside the <code>p</code> tag (do not include the period).</p>
+
+        <p>
+            <pre>
+                &#60style>
+                    h4 {
+                      text-align: center;
+                      height: 25px;
+                    }
+                    p {
+                      text-align: justify;
+                    }
+                    .links {
+                      text-align: left;
+                      color: black;
+                    }
+                    .fullCard {
+                      width: 245px;
+                      border: 1px solid #ccc;
+                      border-radius: 5px;
+                      margin: 10px 5px;
+                      padding: 4px;
+                    }
+                    .cardContent {
+                      padding: 10px;
+                    }
+                    .cardText {
+                      margin-bottom: 30px;
+                    }
+                  &#60/style>
+                  &#60div class="fullCard">
+                    &#60div class="cardContent">
+                      &#60div class="cardText">
+                        &#60h4>Google&#60/h4>
+                        &#60p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at <code>&#60strong>Stanford University&#60/strong></code>.&#60/p>
+                      &#60/div>
+            </pre>
+        </p>
+
+        <h2>Use the u Tag to Underline Text</h2>
+
+        <p>To underline text, you can use the <code>u</code> tag. This is often used to signify that a section of text is important, or something to remember. With the <code>u</code> tag, the browser applies the CSS of <code>text-decoration: underline;</code> to the element.</p>
+
+    </body>
+</html>
