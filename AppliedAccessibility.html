@@ -87,6 +87,62 @@
 
             <p>HTML5 introduced several new elements that give developers more options while also incorporating accessibility features. These tags include <code>main</code>, <code>header</code>, <code>footer</code>, <code>nav</code>, <code>article</code>, and <code>section</code>, among others.</p>
 
+            <h1>Wrap Content in the article Element</h1>
+
+            <p> <code>article</code> is another one of the new HTML5 elements that add semantic meaning to your markup. article is a sectioning element and is used to wrap independent, self-contained content. The tag works well with blog entries, forum posts, or news articles.</p>
+
+            <p>Determining whether content can stand alone is usually a judgment call, but you can use a couple of simple tests. Ask yourself if you removed all surrounding context, would that content still make sense? Similarly, for text, would the content hold up if it were in an RSS feed?</p>
+
+            <p>Remember that folks using assistive technologies rely on organized, semantically meaningful markup to better understand your work.</p>
+
+            <p>Note: The <code>section</code> element is also new with HTML5, and has a slightly different semantic meaning than <code>article</code>. An <code>article</code> is for standalone content, and a <code>section</code> is for grouping thematically related content. They can be used within each other, as needed. For example, if a book is the <code>article</code>, then each chapter is a <code>section</code>. When there's no relationship between groups of content, then use a <code>div</code>.</p>
+
+            <p>&#60div> - groups content &#60section> - groups related content &#60article> - groups independent, self-contained content</p>
+
+            <p>Camper Cat used <code>article</code> tags to wrap the posts on his blog page, but he forgot to use them around the top one. Change the <code>div</code> tag to use an <code>article</code> tag instead.</p>
+            
+            <h1>Make Screen Reader Navigation Easier with the header Landmark</h1>
+
+            <p>The next HTML5 element that adds semantic meaning and improves accessibility is the <code>header</code> tag. It's used to wrap introductory information or navigation links for its parent tag and works well around content that's repeated at the top on multiple pages.</p>
+
+            <p><code>header</code> shares the embedded landmark feature you saw with main, allowing assistive technologies to quickly navigate to that content.</p>
+
+            <p>Note: The <code>header</code> is meant for use in the <code>body</code> tag of your HTML document. It is different than the <code>head</code> element, which contains the page's title, meta information, etc.</p>
+
+            <p>Camper Cat is writing some great articles about ninja training, and wants to add a page for them to his site. Change the top div that currently contains the h1 to a header tag instead.</p>
+
+            <h1>Make Screen Reader Navigation Easier with the nav Landmark</h1>
+
+            <p>The <code>nav</code> element is another HTML5 item with the embedded landmark feature for easy screen reader navigation. This tag is meant to wrap around the main navigation links in your page.</p>
+
+            <p>If there are repeated site links at the bottom of the page, it isn't necessary to markup those with a nav tag as well. Using a <code>footer</code> (covered in the next challenge) is sufficient.</p>
+
+            <p>Camper Cat included navigation links at the top of his training page, but wrapped them in a <code>div</code>. Change the div to a nav tag to improve the accessibility on his page.</p>
+
+            <h1>Make Screen Reader Navigation Easier with the footer Landmark</h1>
+
+            <p>Similar to <code>header</code> and <code>nav</code>, the <code>footer</code> element has a built-in landmark feature that allows assistive devices to quickly navigate to it. It's primarily used to contain copyright information or links to related documents that usually sit at the bottom of a page.</p>
+
+            <p>Camper Cat's training page is making good progress. Change the div he used to wrap his copyright information at the bottom of the page to a footer element.</p>
+
+            <h1>Improve Accessibility of Audio Content with the audio Element</h1>
+
+            <p>HTML5's audio element gives semantic meaning when it wraps sound or audio stream content in your markup. Audio content also needs a text alternative to be accessible to people who are deaf or hard of hearing. This can be done with nearby text on the page or a link to a transcript.</p>
+
+            <p>The audio tag supports the controls attribute. This shows the browser default play, pause, and other controls, and supports keyboard functionality. This is a boolean attribute, meaning it doesn't need a value, its presence on the tag turns the setting on.</p>
+
+            <p>Here's an example:</p>
+
+            <p>
+                <pre>
+                    &#60audio id="meowClip" controls>
+                        &#60source src="audio/meow.mp3" type="audio/mpeg">
+                        &#60source src="audio/meow.ogg" type="audio/ogg">
+                      &#60/audio>
+                      
+                </pre>
+            </p>
+
         </body>
 
     </html>
