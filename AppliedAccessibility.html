@@ -12,6 +12,7 @@
                 pre {
                 font-size: 20px;
                 font-weight:100;
+                word-wrap: break-word;
                 color: aliceblue;
                 background-color: hsl(248, 40%, 65%);
                 }
@@ -187,6 +188,92 @@
                 </pre>
             </p>
 
+            <h2>Wrap Radio Buttons in a fieldset Element for Better Accessibility</h2>
+
+            <p>The next form topic covers the accessibility of radio buttons. Each choice is given a <code>label</code> with a <code>for</code> attribute tying to the <code>id</code> of the corresponding item as covered in the last challenge. Since radio buttons often come in a group where the user must choose one, there's a way to semantically show the choices are part of a set.</p>
+
+            <p>The <code>fieldset</code> tag surrounds the entire grouping of radio buttons to achieve this. It often uses a <code>legend</code> tag to provide a description for the grouping, which screen readers read for each choice in the <code>fieldset</code> element.</p>
+
+            <p>The <code>fieldset</code> wrapper and <code>legend</code> tag are not necessary when the choices are self-explanatory, like a gender selection. Using a label with the for attribute for each radio button is sufficient.</p>
+
+            <p>Here's an example:</p>
+
+            <p>
+                <pre>
+                    &#60form>
+                        &#60fieldset>
+                          &#60legend>Choose one of these three items:&#60/legend>
+                          &#60input id="one" type="radio" name="items" value="one">
+                          &#60label for="one">Choice One&#60/label>&#60br>
+                          &#60input id="two" type="radio" name="items" value="two">
+                          &#60label for="two">Choice Two&#60/label>&#60br>
+                          &#60input id="three" type="radio" name="items" value="three">
+                          &#60label for="three">Choice Three&#60/label>
+                        &#60/fieldset>
+                      &#60/form>
+                </pre>
+            </p>
+
+            <h2>Add an Accessible Date Picker</h2>
+
+            <p>Forms often include the <code>input</code> field, which can be used to create several different form controls. The <code>type</code> attribute on this element indicates what kind of <code>input</code> element will be created.</p>
+            
+            <p>You may have noticed the <code>text</code> and <code>submit</code> input types in prior challenges, and HTML5 introduced an option to specify a <code>date</code> field. Depending on browser support, a date picker shows up in the <code>input</code> field when it's in focus, which makes filling in a form easier for all users.</p>
+
+            <p>For older browsers, the type will default to <code>text</code>, so it helps to show users the expected date format in the <code>label</code> or <code>placeholder</code> text just in case.</p>
+
+            <p>Here's an example:</p>
+
+            <p>
+                <pre>
+                    &#60label for="input1">Enter a date:&#60/label>
+                    &#60input type="date" id="input1" name="input1">
+                </pre>
+            </p>
+
+            <p>
+                <pre>
+                    &#60body>
+                        &#60header>
+                          &#60h1>Tournaments&#60/h1>
+                        &#60/header>
+                        &#60main>
+                          &#60section>
+                            &#60h2>Mortal Kombat Tournament Survey&#60/h2>
+                            &#60form>
+                              &#60p>Tell us the best date for the competition&#60/p>
+                              &#60label for="pickdate">Preferred Date:&#60/label>
+                      
+                              &#60!-- Only change code below this line -->
+                      
+                              &#60input type="date" id="pickdate" name="date">     
+                              
+                              
+                      
+                              &#60!-- Only change code above this line -->
+                      
+                              &#60input type="submit" name="submit" value="Submit">
+                            &#60/form>
+                          &#60/section>
+                        &#60/main>
+                        &#60footer> copy; 2018 Camper Cat&#60/footer>
+                      &#60/body>
+                </pre>
+            </p>
+
+            <h2>Standardize Times with the HTML5 datetime Attribute</h2>
+
+            <p>Continuing with the date theme, HTML5 also introduced the <code>time</code> element along with a <code>datetime</code> attribute to standardize times. The <code>time</code> element is an inline element that can wrap a date or time on a page. A <code>datetime</code> attribute holds a valid format of that date. This is the value accessed by assistive devices. It helps avoid confusion by stating a standardized version of a time, even if it's informally or colloquially written in the text.</p>
+
+            <p>Here's an example:</p>
+
+            <p>
+                <pre>
+                    &#60p>Master Camper Cat officiated the cage match between Goro and Scorpion &#60time datetime="2013-02-13">last Wednesday&#60/time>, which ended in a draw.&#60/p>
+                </pre>
+            </p>
+
         </body>
 
     </html>
+        
