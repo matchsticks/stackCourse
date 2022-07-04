@@ -5,11 +5,48 @@
 
         <!-- For VIEWPORT which adapts the page to the size of the device we need to add the following META line -->
         <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+
+        <style>
+            body{
+           width: 1200px;
+           margin: 0px 50px 0px 50px;
+           font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           }
+
+           pre {
+           font-size: 20px;
+           font-weight:100;
+           color: aliceblue;
+           background-color: hsl(248, 40%, 65%);
+           }
+           
+           .code-div{
+               border: black;
+               background: silver;
+               /* margin: 50px 50px 50px 0px; */
+               padding: 15px 15px 15px 15px;
+           }
+
+           code{
+               /* font-weight: bold; */
+               /* font-size: large; */
+               color: antiquewhite;
+               background: hsl(248, 39%, 39%);
+               font-family: 'Courier New', Courier, monospace;
+           }
+           
+
+           td,th {
+               padding: 2px;
+               text-align:left;
+           }
+
+       </style>
     </head>
     <body>
-    <h1>Basic HTML and HTML5</h1>
+    <h2>Basic HTML and HTML5</h2>
 
-1   <h2>CatPhotoApp</h2>
+   <h2>CatPhotoApp</h2>
         
         <p>You can use radio buttons for questions where you want the user to only give you one answer out of multiple options.</p>
 
@@ -22,8 +59,8 @@
         <p>Click here to view more <a href="#">cat photos</a>.</p>
 
         <pre>
-            <input id="indoor" type="radio" name="indoor-outdoor">
-            <label for="indoor">Indoor</label>
+            &#60input id="indoor" type="radio" name="indoor-outdoor">
+            &#60label for="indoor">Indoor&#60/label>
         </pre>            
 
 
@@ -63,7 +100,7 @@
             <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
         </label>              
 
-        <h1>Checkboxes</h1>
+        <h2>Checkboxes</h2>
 
         <p>Forms commonly use checkboxes for questions that may have more than one answer.</p>
         
@@ -83,7 +120,7 @@
             Add to your form a set of three checkboxes. Each checkbox should be nested within its own label element. All three should share the name attribute of personality.
         </p>
 
-        <h1>Use the value attribute with Radio Buttons and Checkboxes</h1>
+        <h2>Use the value attribute with Radio Buttons and Checkboxes</h2>
 
         <p>When a form gets submitted, the data is sent to the server and includes entries for the options selected. Inputs of type <code>radio</code> and <code>checkbox</code> report their values from the <code> value </code>attribute.</p>
 
@@ -104,7 +141,7 @@
             If you omit the value attribute, the submitted form data uses the default value, which is on. In this scenario, if the user clicked the "indoor" option and submitted the form, the resulting form data would be indoor-outdoor=on, which is not useful. So the value attribute needs to be set to something to identify the option.
         </p>
 
-        <h1>Check Radio Buttons and Checkboxes by Default</h1>
+        <h2>Check Radio Buttons and Checkboxes by Default</h2>
 
         <p>ou can set a checkbox or radio button to be checked by default using the <code>
         checked</code> attribute.
@@ -113,7 +150,7 @@
 
         <input type="radio" name="test-name" checked>
         
-        <h1>Nest Many Elements within a Single div Element</h1>
+        <h2>Nest Many Elements within a Single div Element</h2>
 
         <p>The div element, also known as a division element, is a general purpose container for other elements.</p>
 
@@ -149,7 +186,7 @@
             Here's an example of the page structure. Your HTML code would go in the space between the two html tags.
         </p>
 
-        <h1>Define the Head and Body of an HTML Document</h1>
+        <h2>Define the Head and Body of an HTML Document</h2>
 
         <p>You can add another level of organization in your HTML document within the html tags with the head and body elements. Any markup with information about your page would go into the head tag. Then any markup with the content of the page (what displays for a user) would go into the body tag.</p>
 
