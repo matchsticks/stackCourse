@@ -41,7 +41,7 @@
         </head>
         <body>
 
-            <h2>Add a Text Alternative to Images for Visually Impaired Accessibility</h2>
+        <h2>Add a Text Alternative to Images for Visually Impaired Accessibility</h2>
 
             <p>You've likely seen an alt attribute on an img tag in other challenges. alt text describes the image's content and provides a text-alternative for it. An alt attribute helps in cases where the image fails to load or can't be seen by a user. Search engines also use it to understand what an image contains to include it in search results. Here's an example:</p>
 
@@ -53,7 +53,7 @@
 
             <p>Camper Cat happens to be both a coding ninja and an actual ninja, who is building a website to share his knowledge. The profile picture he wants to use shows his skills and should be appreciated by all site visitors. Add an alt attribute in the img tag, that explains Camper Cat is doing karate. (The image src doesn't link to an actual file, so you should see the alt text in the display.)</p>
             
-            <h2>Know When Alt Text Should be Left Blank</h2>
+        <h2>Know When Alt Text Should be Left Blank</h2>
 
             <p>In the last challenge, you learned that including an alt attribute when using img tags is mandatory. However, sometimes images are grouped with a caption already describing them, or are used for decoration only. In these cases, alt text may seem redundant or unnecessary.</p>
 
@@ -67,7 +67,7 @@
 
             <p>Camper Cat has coded a skeleton page for the blog part of his website. He's planning to add a visual break between his two articles with a decorative image of a samurai sword. Add an alt attribute to the img tag and set it to an empty string. (Note that the image src doesn't link to an actual file - don't worry that there are no swords showing in the display.)</p>
 
-            <h2>Use Headings to Show Hierarchical Relationships of Content</h2>
+        <h2>Use Headings to Show Hierarchical Relationships of Content</h2>
 
             <p>Headings (h1 through h6 elements) are workhorse tags that help provide structure and labeling to your content. Screen readers can be set to read only the headings on a page so the user gets a summary. This means it is important for the heading tags in your markup to have semantic meaning and relate to each other, not be picked merely for their size values.</p>
 
@@ -83,11 +83,11 @@
 
             <p>Camper Cat wants a page on his site dedicated to becoming a ninja. Help him fix the headings so his markup gives semantic meaning to the content, and shows the proper parent-child relationships of his sections. Change all the h5 tags to the proper heading level to indicate they are subsections of the h2 ones. Use h3 tags for the purpose.</p>
 
-            <h1>Jump Straight to the Content Using the main Element</h1>
+        <h2>Jump Straight to the Content Using the main Element</h2>
 
             <p>HTML5 introduced several new elements that give developers more options while also incorporating accessibility features. These tags include <code>main</code>, <code>header</code>, <code>footer</code>, <code>nav</code>, <code>article</code>, and <code>section</code>, among others.</p>
 
-            <h1>Wrap Content in the article Element</h1>
+            <h2>Wrap Content in the article Element</h2>
 
             <p> <code>article</code> is another one of the new HTML5 elements that add semantic meaning to your markup. article is a sectioning element and is used to wrap independent, self-contained content. The tag works well with blog entries, forum posts, or news articles.</p>
 
@@ -101,7 +101,7 @@
 
             <p>Camper Cat used <code>article</code> tags to wrap the posts on his blog page, but he forgot to use them around the top one. Change the <code>div</code> tag to use an <code>article</code> tag instead.</p>
             
-            <h1>Make Screen Reader Navigation Easier with the header Landmark</h1>
+            <h2>Make Screen Reader Navigation Easier with the header Landmark</h2>
 
             <p>The next HTML5 element that adds semantic meaning and improves accessibility is the <code>header</code> tag. It's used to wrap introductory information or navigation links for its parent tag and works well around content that's repeated at the top on multiple pages.</p>
 
@@ -111,7 +111,7 @@
 
             <p>Camper Cat is writing some great articles about ninja training, and wants to add a page for them to his site. Change the top div that currently contains the h1 to a header tag instead.</p>
 
-            <h1>Make Screen Reader Navigation Easier with the nav Landmark</h1>
+            <h2>Make Screen Reader Navigation Easier with the nav Landmark</h2>
 
             <p>The <code>nav</code> element is another HTML5 item with the embedded landmark feature for easy screen reader navigation. This tag is meant to wrap around the main navigation links in your page.</p>
 
@@ -119,13 +119,13 @@
 
             <p>Camper Cat included navigation links at the top of his training page, but wrapped them in a <code>div</code>. Change the div to a nav tag to improve the accessibility on his page.</p>
 
-            <h1>Make Screen Reader Navigation Easier with the footer Landmark</h1>
+            <h2>Make Screen Reader Navigation Easier with the footer Landmark</h2>
 
             <p>Similar to <code>header</code> and <code>nav</code>, the <code>footer</code> element has a built-in landmark feature that allows assistive devices to quickly navigate to it. It's primarily used to contain copyright information or links to related documents that usually sit at the bottom of a page.</p>
 
             <p>Camper Cat's training page is making good progress. Change the div he used to wrap his copyright information at the bottom of the page to a footer element.</p>
 
-            <h1>Improve Accessibility of Audio Content with the audio Element</h1>
+            <h2>Improve Accessibility of Audio Content with the audio Element</h2>
 
             <p>HTML5's audio element gives semantic meaning when it wraps sound or audio stream content in your markup. Audio content also needs a text alternative to be accessible to people who are deaf or hard of hearing. This can be done with nearby text on the page or a link to a transcript.</p>
 
@@ -147,7 +147,7 @@
 
             <p>Time to take a break from Camper Cat and meet fellow camper Zersiax (@zersiax), a champion of accessibility and a screen reader user. To hear a clip of his screen reader in action, add an audio element after the p. Include the controls attribute. Then place a source tag inside the audio tags with the src attribute set to https://s3.amazonaws.com/freecodecamp/screen-reader.mp3 and type attribute set to "audio/mpeg".</p>
 
-            <h1>Make Elements Only Visible to a Screen Reader by Using Custom CSS</h1>
+            <h2>Make Elements Only Visible to a Screen Reader by Using Custom CSS</h2>
 
             <p>Have you noticed that all of the applied accessibility challenges so far haven't used any CSS? This shows the importance of using a logical document outline and semantically meaningful tags around your content before introducing the visual design aspect.</p>
 
@@ -177,13 +177,40 @@
                 </ul>
             </p>
 
-            <h1>Make Links Navigable with HTML Access Keys</h1>
+            <h2>Make Links Navigable with HTML Access Keys</h2>
 
             <p>HTML offers the <code>accesskey</code> attribute to specify a shortcut key to activate or bring focus to an element. Adding an <code>accesskey</code> attribute can make navigation more efficient for keyboard-only users.</p>
 
             <p>HTML5 allows this attribute to be used on any element, but it's particularly useful when it's used with interactive ones. This includes links, buttons, and form controls.</p>
 
             <p>Here's an example:</p>
+
+            <code>&#60button accesskey="b">Important Button&#60/button></code>
+            
+        <h1>Use tabindex to Add Keyboard Focus to an Element</h1>
+
+            <p>The HTML <code>tabindex</code> attribute has three distinct functions relating to an element's keyboard focus. When it's on a tag, it indicates that the element can be focused on. The value (an integer that's positive, negative, or zero) determines the behavior.</p>
+
+            <p>Certain elements, such as links and form controls, automatically receive keyboard focus when a user tabs through a page. It's in the same order as the elements come in the HTML source markup. This same functionality can be given to other elements, such as div, span, and p, by placing a tabindex="0" attribute on them. Here's an example:</p>
+
+            <code>&#60div tabindex="0">I need keyboard focus!&#60/div></code>
+
+            <p>Note: A negative tabindex value (typically -1) indicates that an element is focusable, but is not reachable by the keyboard. This method is generally used to bring focus to content programmatically (like when a div used for a pop-up window is activated), and is beyond the scope of these challenges.</p>
+
+        <h2>Use tabindex to Specify the Order of Keyboard Focus for Several Elements</h2>     
+
+            <p>The tabindex attribute also specifies the exact tab order of elements. This is achieved when the attribute's value is set to a positive number of 1 or higher.</p>
+
+            <p>Setting a tabindex="1" will bring keyboard focus to that element first. Then it cycles through the sequence of specified tabindex values (2, 3, etc.), before moving to default and tabindex="0" items.</p>
+
+            <p>It's important to note that when the tab order is set this way, it overrides the default order (which uses the HTML source). This may confuse users who are expecting to start navigation from the top of the page. This technique may be necessary in some circumstances, but in terms of accessibility, take care before applying it.</p>
+
+            <p>Here's an example:</p>
+
+            <p><pre>
+                &#60div tabindex="1">I get keyboard focus, and I get it first!&#60/div>
+                &#60div tabindex="2">I get keyboard focus, and I get it second!&#60/div>
+            </pre></p>
 
         </body>
 
