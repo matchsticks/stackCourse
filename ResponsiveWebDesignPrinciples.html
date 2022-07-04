@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Responsive Web Design Principles</title>
+
+            <style>
+                body{
+               width: 1200px;
+               margin: 0px 50px 0px 50px;
+               font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+               }
+
+               pre {
+               font-size: 20px;
+               font-weight:100;
+               color: aliceblue;
+               background-color: hsl(248, 40%, 65%);
+               }
+               
+               .code-div{
+                   border: black;
+                   background: silver;
+                   /* margin: 50px 50px 50px 0px; */
+                   padding: 15px 15px 15px 15px;
+               }
+
+               code{
+                   /* font-weight: bold; */
+                   /* font-size: large; */
+                   color: antiquewhite;
+                   background: hsl(248, 39%, 39%);
+                   font-family: 'Courier New', Courier, monospace;
+               }
+               
+
+               td,th {
+                   padding: 2px;
+                   text-align:left;
+               }
+
+           </style>
+        </head>
+
+    <body>
+        <h1>Responsive Web Design Principles</h1>
+
+            <h2>Create a Media Query</h2>
+
+                <p>Media Queries are a new technique introduced in CSS3 that change the presentation of content based on different viewport sizes. The viewport is a user's visible area of a web page, and is different depending on the device used to access the site.</p>
+
+                <p>Media Queries consist of a media type, and if that media type matches the type of device the document is displayed on, the styles are applied. You can have as many selectors and styles inside your media query as you want.</p>
+
+                <p>Here's an example of a media query that returns the content when the device's width is less than or equal to 100px:</p>
+
+                <code>@media (max-width: 100px) { /* CSS Rules */ }</code>
+
+                <p>and the following media query returns the content when the device's height is more than or equal to 350px:</p>
+
+                <code>@media (min-height: 350px) { /* CSS Rules */ }</code>
+
+                <p>Remember, the CSS inside the media query is applied only if the media type matches that of the device being used.</p>
+
+    </body>
+    </html>
