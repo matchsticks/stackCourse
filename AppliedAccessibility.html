@@ -58,6 +58,7 @@
             <li><a href="#S11">Make Links Navigable with HTML Access Keys</a></li>
             <li><a href="#S12">Use tabindex to Add Keyboard Focus to an Element</a></li>
             <li><a href="#S13">Use tabindex to Specify the Order of Keyboard Focus for Several Elements</a></li>
+            <li><a href="#S14">Make Elements Only Visible to a Screen Reader by Using Custom CSS</a></li>
         </ul>
 
         <h2 id="S1">Add a Text Alternative to Images for Visually Impaired Accessibility</h2><a href="#Home">Home</a>
@@ -217,7 +218,7 @@
 
             <p>Note: A negative tabindex value (typically -1) indicates that an element is focusable, but is not reachable by the keyboard. This method is generally used to bring focus to content programmatically (like when a div used for a pop-up window is activated), and is beyond the scope of these challenges.</p>
 
-        <h2 id="S13">Use tabindex to Specify the Order of Keyboard Focus for Several Elements</h2><a href="#Home">Home</a>     
+        <h2 id= "S13">Use tabindex to Specify the Order of Keyboard Focus for Several Elements</h2><a href="#Home">Home</a>     
 
             <p>The tabindex attribute also specifies the exact tab order of elements. This is achieved when the attribute's value is set to a positive number of 1 or higher.</p>
 
@@ -231,6 +232,30 @@
                 &#60div tabindex="1">I get keyboard focus, and I get it first!&#60/div>
                 &#60div tabindex="2">I get keyboard focus, and I get it second!&#60/div>
             </pre></p>
+
+        <h2 id="S14">Make Elements Only Visible to a Screen Reader by Using Custom CSS</h2><a href="#Home">Home</a>
+
+            <p>Have you noticed that all of the applied accessibility challenges so far haven't used any CSS? This shows the importance of using a logical document outline and semantically meaningful tags around your content before introducing the visual design aspect.</p>
+
+            <p>However, CSS's magic can also improve accessibility on your page when you want to visually hide content meant only for screen readers. This happens when information is in a visual format (like a chart), but screen reader users need an alternative presentation (like a table) to access the data. CSS is used to position the screen reader-only elements off the visual area of the browser window.</p>
+
+            <p>Here's an example of the CSS rules that accomplish this:</p>
+
+            <div class="code-div">
+                <p>
+                    <pre>
+                        .sr-only {
+                            position: absolute;
+                            left: -10000px;
+                            width: 1px;
+                            height: 1px;
+                            top: auto;
+                            overflow: hidden;
+                          }                          
+                    </pre>
+                </p>
+
+            </div>
 
         </body>
 
