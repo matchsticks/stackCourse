@@ -3,50 +3,107 @@
     <head>
         <title>Applied Visual Design</title>
         <style>
+          body{
+         width: 1200px;
+         margin: 0px 50px 0px 50px;
+         background-color:hsl(248, 10%, 70%);
+         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         }
 
-            body{
-                width: 1200px;
-                margin: 0px 50px 0px 50px;
-                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            }
+         pre {
+         font-size: 20px;
+         font-weight:100;
+         color: aliceblue;
+         background-color: hsl(248, 16%, 26%);
+         }
+         
+         .code-div{
+             border: black;
+             background: silver;
+             /* margin: 50px 50px 50px 0px; */
+             padding: 15px 15px 15px 15px;
+         }
 
-            pre {
-            font-size: 20px;
-            font-weight:100;
-            color: aliceblue;
-            background-color: hsl(248, 40%, 65%);
-            }
-            
-            .code-div{
-                border: black;
-                background: silver;
-                /* margin: 50px 50px 50px 0px; */
-                padding: 15px 15px 15px 15px;
-            }
+         code{
+             /* font-weight: bold; */
+             /* font-size: large; */
+             color: antiquewhite;
+             background: hsl(248, 39%, 39%);
+             font-family: 'Courier New', Courier, monospace;
+         }
+         
 
-            code{
-                /* font-weight: bold; */
-                /* font-size: large; */
-                color: antiquewhite;
-                background: hsl(248, 39%, 39%);
-                font-family: 'Courier New', Courier, monospace;
-            }
-            
+         td,th {
+             padding: 2px;
+             text-align:left;
+         }
 
-            td,th {
-                padding: 2px;
-                text-align:left;
-            }
-
-        </style>        
+     </style>       
     </head>
     <body>
+
+      <h1 id="Home">Applied Visual Design</h1>
+
+      <ul>
+        <li><a href="#S1">Create Visual Balance Using the text-align Property</a></li>
+        <li><a href="#S2">Adjust the Width of an Element Using the width Property</a></li>
+        <li><a href="#S3">Adjust the Height of an Element Using the height Property</a></li>
+        <li><a href="#S4">Use the strong Tag to Make Text Bold</a></li>
+        <li><a href="#S5">Use the u Tag to Underline Text</a></li>
+        <li><a href="#S6">Use the em Tag to Italicize Text</a></li>
+        <li><a href="#S7">Use the s Tag to Strikethrough Text</a></li>
+        <li><a href="#S8">Create a Horizontal Line Using the hr Element</a></li>
+        <li><a href="#S9">Adjust the background-color Property of Text</a></li>
+        <li><a href="#S10">Adjust the Size of a Heading Element Versus a Paragraph Element</a></li>
+        <li><a href="#S11">Add a box-shadow to a Card-like Element</a></li>
+        <li><a href="#S12">Decrease the Opacity of an Element</a></li>
+        <li><a href="#S13">Use the text-transform Property to Make Text Uppercase</a></li>
+        <li><a href="#S14">Set the font-size for Multiple Heading Elements</a></li>
+        <li><a href="#S15">Set the font-weight for Multiple Heading Elements</a></li>
+        <li><a href="#S16">Set the font-size of Paragraph Text</a></li>
+        <li><a href="#S17">Set the line-height of Paragraphs</a></li>
+        <li><a href="#S18">Adjust the Hover State of an Anchor Tag</a></li>
+        <li><a href="#S19">Change an Element's Relative Position</a></li>
+        <li><a href="#S20">Move a Relatively Positioned Element with CSS Offsets</a></li>
+        <li><a href="#S21">Lock an Element to its Parent with Absolute Positioning</a></li>
+        <li><a href="#S22">Lock an Element to the Browser Window with Fixed Positioning</a></li>
+        <li><a href="#S23">Push Elements Left or Right with the float Property</a></li>
+        <li><a href="#S24">Change the Position of Overlapping Elements with the z-index Property</a></li>
+        <li><a href="#S25">Center an Element Horizontally Using the margin Property</a></li>
+        <li><a href="#S26">Learn about Complementary Colors</a></li>
+        <li><a href="#S27">Learn about Tertiary Colors</a></li>
+        <li><a href="#S28">Adjust the Color of Various Elements to Complementary Colors</a></li>
+        <li><a href="#S29">Adjust the Hue of a Color</a></li>
+        <li><a href="#S30">Adjust the Tone of a Color</a></li>
+        <li><a href="#S31">Create a Gradual CSS Linear Gradient</a></li>
+        <li><a href="#S32">Use a CSS Linear Gradient to Create a Striped Element</a></li>
+        <li><a href="#S33">Create Texture by Adding a Subtle Pattern as a Background Image</a></li>
+        <li><a href="#S34">Use the CSS Transform scale Property to Change the Size of an Element</a></li>
+        <li><a href="#S35">Use the CSS Transform scale Property to Scale an Element on Hover</a></li>
+        <li><a href="#S36">Use the CSS Transform Property skewX to Skew an Element Along the X-Axis</a></li>
+        <li><a href="#S37">Use the CSS Transform Property skewY to Skew an Element Along the Y-Axis</a></li>
+        <li><a href="#S38">Create a Graphic Using CSS</a></li>
+        <li><a href="#S39">Create a More Complex Shape Using CSS and HTML</a></li>
+        <li><a href="#S40">Learn How the CSS @keyframes and animation Properties Work</a></li>
+        <li><a href="#S41">Use CSS Animation to Change the Hover State of a Button</a></li>
+        <li><a href="#S42">Modify Fill Mode of an Animation</a></li>
+        <li><a href="#S43">Create Movement Using CSS Animation</a></li>
+        <li><a href="#S44">Create Visual Direction by Fading an Element from Left to Right</a></li>
+        <li><a href="#S45">Animate Elements Continually Using an Infinite Animation Count</a></li>
+        <li><a href="#S46">Make a CSS Heartbeat using an Infinite Animation Count</a></li>
+        <li><a href="#S47">Animate Elements at Variable Rates</a></li>
+        <li><a href="#S48">Animate Multiple Elements at Variable Rates</a></li>
+        <li><a href="#S49">Change Animation Timing with Keywords</a></li>
+        <li><a href="#S50">Learn How Bezier Curves Work</a></li>
+        <li><a href="#S51">Use a Bezier Curve to Move a Graphic</a></li>
+        <li><a href="#S52">Make Motion More Natural Using a Bezier Curve</a></li>
+      </ul>
 
         <p style="font-size: larger;">Visual design is a combination of typography, color theory, graphics, animation, page layout, and more to help deliver your unique message.</p>
 
         <p style="font-size: larger;">In this course, you'll learn how to apply these different elements of visual design to your webpages.</p>
 
-        <h2>Create Visual Balance Using the text-align Property</h2>
+      <h2 id="S1">Create Visual Balance Using the text-align Property</h2><a href="#Home">Home</a>
 
         <p>This section of the curriculum focuses on Applied Visual Design. The first group of challenges build on the given card layout to show a number of core principles.</p>
 
@@ -98,7 +155,7 @@
             </pre>
         </p>
 
-        <h2>Adjust the Width of an Element Using the width Property</h2>
+      <h2 id="S2">Adjust the Width of an Element Using the width Property</h2><a href="#Home">Home</a>
 
         <p>You can specify the <code>width</code> of an element using the width property in CSS. Values can be given in relative length units (such as <code>em</code>), absolute length units (such as <code>px</code>), or as a percentage of its containing parent element. Here's an example that changes the width of an image to 220px:</p>
 
@@ -127,7 +184,7 @@
             </pre>
         </p>
 
-        <h2>Adjust the Height of an Element Using the height Property</h2>
+      <h2 id="S3">Adjust the Height of an Element Using the height Property</h2><a href="#Home">Home</a>
 
         <p>You can specify the <code>height</code> of an element using the height property in CSS, similar to the <code>width</code> property. Here's an example that changes the height of an image to 20px:</p>
 
@@ -167,7 +224,7 @@
             </pre>
         </p>
 
-        <h2>Use the strong Tag to Make Text Bold</h2>
+      <h2 id="S4">Use the strong Tag to Make Text Bold</h2><a href="#Home">Home</a>
 
         <p>To make text bold, you can use the <code>strong</code> tag. This is often used to draw attention to text and symbolize that it is important. With the <code>strong</code> tag, the browser applies the CSS of <code>font-weight: bold;</code> to the element.</p>
 
@@ -210,7 +267,7 @@
             </pre>
         </p>
 
-        <h2>Use the u Tag to Underline Text</h2>
+      <h2 id="S5">Use the u Tag to Underline Text</h2><a href="#Home">Home</a>
 
         <p>To underline text, you can use the <code>u</code> tag. This is often used to signify that a section of text is important, or something to remember. With the <code>u</code> tag, the browser applies the CSS of <code>text-decoration: underline;</code> to the element.</p>
 
@@ -218,21 +275,21 @@
 
         <p>Note: Try to avoid using the u tag when it could be confused for a link. Anchor tags also have a default underlined formatting.</p>
 
-        <h2>Use the em Tag to Italicize Text</h2>
+      <h2 id="S6">Use the em Tag to Italicize Text</h2><a href="#Home">Home</a>
 
         <p>To emphasize text, you can use the em tag. This displays text as italicized, as the browser applies the CSS of font-style: italic; to the element.</p>
 
-        <h2>Use the s Tag to Strikethrough Text</h2>
+      <h2 id="S7">Use the s Tag to Strikethrough Text</h2><a href="#Home">Home</a>
 
         <p>To strikethrough text, which is when a horizontal line cuts across the characters, you can use the s tag. It shows that a section of text is no longer valid. With the s tag, the browser applies the CSS of text-decoration: line-through; to the element.</p>
 
         <p>Wrap the s tag around Google inside the h4 tag and then add the word Alphabet beside it without the strikethrough formatting.</p>
 
-        <h2>Create a Horizontal Line Using the hr Element</h2>
+      <h2 id="S8">Create a Horizontal Line Using the hr Element</h2><a href="#Home">Home</a>
 
         <p>You can use the hr tag to add a horizontal line across the width of its containing element. This can be used to define a change in topic or to visually separate groups of content</p>
 
-        <h2>Adjust the background-color Property of Text</h2>
+      <h2 id="S9">Adjust the background-color Property of Text</h2><a href="#Home">Home</a>
 
         <p>Instead of adjusting your overall background or the color of the text to make the foreground easily readable, you can add a background-color to the element holding the text you want to emphasize. This challenge uses rgba() instead of hex codes or normal rgb().</p>
 
@@ -250,11 +307,11 @@
 
         <p>You'll use background-color: rgba(45, 45, 45, 0.1) for this challenge. It produces a dark gray color that is nearly transparent given the low opacity value of 0.1.</p>
 
-        <h2>Adjust the Size of a Heading Element Versus a Paragraph Element</h2>
+      <h2 id="S10">Adjust the Size of a Heading Element Versus a Paragraph Element</h2><a href="#Home">Home</a>
 
         <p>The font size of heading elements (h2 through h6) should generally be larger than the font size of paragraph tags. This makes it easier for the user to visually understand the layout and level of importance of everything on the page. You use the font-size property to adjust the size of the text in an element.</p>
 
-        <h2>Add a box-shadow to a Card-like Element</h2>
+      <h2 id="S11">Add a box-shadow to a Card-like Element</h2><a href="#Home">Home</a>
 
         <p>The <code>box-shadow</code> property applies one or more shadows to an element.</p>
 
@@ -276,7 +333,7 @@
 
         <code>box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);</code>
 
-        <h2>Decrease the Opacity of an Element</h2>
+      <h2 id="S12">Decrease the Opacity of an Element</h2><a href="#Home">Home</a>
 
         <p>The <code>opacity</code> property in CSS is used to adjust the opacity, or conversely, the transparency for an item.</p>
 
@@ -287,7 +344,7 @@
 
         <p>The value given will apply to the entire element, whether that's an image with some transparency, or the foreground and background colors for a block of text.</p>
 
-        <h2>Use the text-transform Property to Make Text Uppercase</h2>
+      <h2 id="S13">Use the text-transform Property to Make Text Uppercase</h2><a href="#Home">Home</a>
 
         <p>The <code>text-transform</code> property in CSS is used to change the appearance of text. It's a convenient way to make sure text on a webpage appears consistently, without having to change the text content of the actual HTML elements.</p>
 
@@ -326,25 +383,25 @@
             </tbody>
           </table>
 
-          <h2>Set the font-size for Multiple Heading Elements</h2>
+        <h2 id="S14">Set the font-size for Multiple Heading Elements</h2><a href="#Home">Home</a>
 
           <p>The font-size property is used to specify how large the text is in a given element. This rule can be used for multiple elements to create visual consistency of text on a page. In this challenge, you'll set the values for all h2 through h6 tags to balance the heading sizes.</p>
 
-          <h2>Set the font-weight for Multiple Heading Elements</h2>
+        <h2 id="S15">Set the font-weight for Multiple Heading Elements</h2><a href="#Home">Home</a>
 
           <p>You set the <code>font-size</code> of each heading tag in the last challenge, here you'll adjust the <code>font-weight</code>.</p>
 
           <p>The <code>font-weight</code> property sets how thick or thin characters are in a section of text.</p>
 
-          <h2>Set the font-size of Paragraph Text</h2>
+        <h2 id="S16">Set the font-size of Paragraph Text</h2><a href="#Home">Home</a>
 
           <p>The font-size property in CSS is not limited to headings, it can be applied to any element containing text.</p>
 
-          <h2>Set the line-height of Paragraphs</h2>
+        <h2 id="S17">Set the line-height of Paragraphs</h2><a href="#Home">Home</a>
 
           <p>CSS offers the <code>line-height</code> property to change the height of each line in a block of text. As the name suggests, it changes the amount of vertical space that each line of text gets.</p>
 
-          <h2>Adjust the Hover State of an Anchor Tag</h2>
+        <h2 id="S18">Adjust the Hover State of an Anchor Tag</h2><a href="#Home">Home</a>
 
           <p>This challenge will touch on the usage of pseudo-classes. A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.</p>
 
@@ -359,7 +416,7 @@
              </pre>
            </p>
 
-           <h2>Change an Element's Relative Position</h2>
+        <h2 id="S19">Change an Element's Relative Position</h2><a href="#Home">Home</a>
 
            <p>CSS treats each HTML element as its own box, which is usually referred to as the CSS Box Model. Block-level items automatically start on a new line (think headings, paragraphs, and divs) while inline items sit within surrounding content (like images or spans). The default layout of elements in this way is called the normal flow of a document, but CSS offers the position property to override it.</p>
 
@@ -394,23 +451,23 @@
             </pre>
           </p>
 
-          <h2>Move a Relatively Positioned Element with CSS Offsets</h2>
+        <h2 id="S20">Move a Relatively Positioned Element with CSS Offsets</h2><a href="#Home">Home</a>
 
           <p>The CSS offsets of top or bottom, and left or right tell the browser how far to offset an item relative to where it would sit in the normal flow of the document. You're offsetting an element away from a given spot, which moves the element away from the referenced side (effectively, the opposite direction). As you saw in the last challenge, using the top offset moved the h2 downwards. Likewise, using a left offset moves an item to the right.</p>
 
-          <h2>Lock an Element to its Parent with Absolute Positioning</h2>
+        <h2 id="S21">Lock an Element to its Parent with Absolute Positioning</h2><a href="#Home">Home</a>
 
           <p>The next option for the CSS position property is <code>absolute</code>, which locks the element in place relative to its parent container. Unlike the relative position, this removes the element from the normal flow of the document, so surrounding items ignore it. The CSS offset properties (top or bottom and left or right) are used to adjust the position.</p>
 
           <p>One nuance with absolute positioning is that it will be locked relative to its closest positioned ancestor. If you forget to add a position rule to the parent item, (this is typically done using position: relative;), the browser will keep looking up the chain and ultimately default to the body tag.</p>
 
-          <h2>Lock an Element to the Browser Window with Fixed Positioning</h2>
+        <h2 id="S22">Lock an Element to the Browser Window with Fixed Positioning</h2><a href="#Home">Home</a>
 
           <p>The next layout scheme that CSS offers is the fixed position, which is a type of absolute positioning that locks an element relative to the browser window. Similar to absolute positioning, it's used with the CSS offset properties and also removes the element from the normal flow of the document. Other items no longer "realize" where it is positioned, which may require some layout adjustments elsewhere.</p>
 
           <p>One key difference between the fixed and absolute positions is that an element with a fixed position won't move when the user scrolls.</p>
 
-          <h2>Push Elements Left or Right with the float Property</h2>
+        <h2 id="S23">Push Elements Left or Right with the float Property</h2><a href="#Home">Home</a>
 
           <p>The next positioning tool does not actually use position, but sets the float property of an element. Floating elements are removed from the normal flow of a document and pushed to either the left or right of their containing parent element. It's commonly used with the width property to specify how much horizontal space the floated element requires.</p>
 
@@ -448,7 +505,7 @@
             </pre>
           </p>
 
-          <h2>Change the Position of Overlapping Elements with the z-index Property</h2>
+        <h2 id="S24">Change the Position of Overlapping Elements with the z-index Property</h2>
 
           <p>When elements are positioned to overlap (i.e. using position: absolute | relative | fixed | sticky), the element coming later in the HTML markup will, by default, appear on the top of the other elements. However, the z-index property can specify the order of how elements are stacked on top of one another. It must be an integer (i.e. a whole number and not a decimal), and higher values for the z-index property of an element move it higher in the stack than those with lower values.</p>
 
@@ -482,7 +539,7 @@
             </pre>
           </p>
 
-          <h2>Center an Element Horizontally Using the margin Property</h2>
+        <h2 id="S25">Center an Element Horizontally Using the margin Property</h2> <a href="#Home">Home</a>
 
           <p>Another positioning technique is to center a block element horizontally. One way to do this is to set its <code>margin</code> to a value of auto.</p>
 
@@ -502,7 +559,7 @@
             </pre>
           </p>
 
-          <h2>Learn about Complementary Colors</h2>
+        <h2 id="S26">Learn about Complementary Colors</h2><a href="#Home">Home</a>
 
           <p>Color theory and its impact on design is a deep topic and only the basics are covered in the following challenges. On a website, color can draw attention to content, evoke emotions, or create visual harmony. Using different combinations of colors can really change the look of a website, and a lot of thought can go into picking a color palette that works with your content.</p>
 
@@ -522,7 +579,7 @@
 
           <p>Note: Using color can be a powerful way to add visual interest to a page. However, color alone should not be used as the only way to convey important information because users with visual impairments may not understand that content. This issue will be covered in more detail in the Applied Accessibility challenges.</p>
 
-          <h2>Learn about Tertiary Colors</h2>
+        <h2 id="#S27">Learn about Tertiary Colors</h2><a href="#Home">Home</a>
 
           <p>Computer monitors and device screens create different colors by combining amounts of red, green, and blue light. This is known as the RGB additive color model in modern color theory. Red (R), green (G), and blue (B) are called primary colors. Mixing two primary colors creates the secondary colors cyan (G + B), magenta (R + B) and yellow (R + G). You saw these colors in the Complementary Colors challenge. These secondary colors happen to be the complement to the primary color not used in their creation, and are opposite to that primary color on the color wheel. For example, magenta is made with red and blue, and is the complement to green.</p>
 
@@ -553,13 +610,13 @@
             </tbody>
           </table>
 
-          <h2>Adjust the Color of Various Elements to Complementary Colors</h2>
+        <h2 id="S28">Adjust the Color of Various Elements to Complementary Colors</h2><a href="#Home">Home</a>
 
           <p>The Complementary Colors challenge showed that opposite colors on the color wheel can make each other appear more vibrant when placed side-by-side. However, the strong visual contrast can be jarring if it's overused on a website, and can sometimes make text harder to read if it's placed on a complementary-colored background. In practice, one of the colors is usually dominant and the complement is used to bring visual attention to certain content on the page.</p>
 
           <p>This page will use a shade of teal (#09A7A1) as the dominant color, and its orange (#FF790E) complement to visually highlight the sign-up buttons. Change the background-color of both the header and footer from black to the teal color. Then change the h2 text color to teal as well. Finally, change the background-color of the button to the orange color.</p>
 
-          <h2>Adjust the Hue of a Color</h2>
+        <h2 id="S29">Adjust the Hue of a Color</h2><a href="#Home">Home</a>
 
           <p>Colors have several characteristics including hue, saturation, and lightness. CSS3 introduced the <code>hsl()</code> property as an alternative way to pick a color by directly stating these characteristics.</p>
 
@@ -604,11 +661,11 @@
             </tbody>
           </table>
 
-            <h2>Adjust the Tone of a Color</h2>
+        <h2 id="S30">Adjust the Tone of a Color</h2><a href="#Home">Home</a>
 
            <p>The hsl() option in CSS also makes it easy to adjust the tone of a color. Mixing white with a pure hue creates a tint of that color, and adding black will make a shade. Alternatively, a tone is produced by adding gray or by both tinting and shading. Recall that the 's' and 'l' of hsl() stand for saturation and lightness, respectively. The saturation percent changes the amount of gray and the lightness percent determines how much white or black is in the color. This is useful when you have a base hue you like, but need different variations of it.</p>
 
-           <h2>Create a Gradual CSS Linear Gradient</h2>
+        <h2 id="S31">Create a Gradual CSS Linear Gradient</h2><a href="#Home">Home</a>
 
            <p>Applying a color on HTML elements is not limited to one flat hue. CSS provides the ability to use color transitions, otherwise known as gradients, on elements. This is accessed through the <code>background</code> property's <code>linear-gradient()</code> function. Here is the general syntax:</p>
 
@@ -618,7 +675,7 @@
 
           <pre>background: linear-gradient(90deg, red, yellow, rgb(204, 204, 255));</pre>
 
-          <h2>Use a CSS Linear Gradient to Create a Striped Element</h2>
+        <h2 id="S32">Use a CSS Linear Gradient to Create a Striped Element</h2><a href="#Home">Home</a>
 
           <p>The <code>repeating-linear-gradient()</code> function is very similar to <code>linear-gradient()</code> with the major difference that it repeats the specified gradient pattern. <code>repeating-linear-gradient()</code> accepts a variety of values, but for simplicity, you'll work with an angle value and color stop values in this challenge.</p>
 
@@ -656,11 +713,11 @@
             </pre>
           </p>
 
-          <h2>Create Texture by Adding a Subtle Pattern as a Background Image</h2>
+        <h2 id="S33">Create Texture by Adding a Subtle Pattern as a Background Image</h2><a href="#Home">Home</a>
 
           <p>One way to add texture and interest to a background and have it stand out more is to add a subtle pattern. The key is balance, as you don't want the background to stand out too much, and take away from the foreground. The background property supports the url() function in order to link to an image of the chosen texture or pattern. The link address is wrapped in quotes inside the parentheses.</p>
 
-          <h2>Use the CSS Transform scale Property to Change the Size of an Element</h2>
+        <h2 id="S34">Use the CSS Transform scale Property to Change the Size of an Element</h2><a href="#Home">Home</a>
 
           <p>To change the scale of an element, CSS has the transform property, along with its scale() function. The following code example doubles the size of all the paragraph elements on the page:</p>
 
@@ -672,7 +729,7 @@
             </pre>
           </p>
 
-          <h2>Use the CSS Transform scale Property to Scale an Element on Hover</h2>
+        <h2 id="S35">Use the CSS Transform scale Property to Scale an Element on Hover</h2><a href="#Home">Home</a>
 
           <p>The <code>transform</code> property has a variety of functions that let you scale, move, rotate, skew, etc., your elements. When used with pseudo-classes such as <code>:hover</code> that specify a certain state of an element, the <code>transform</code> property can easily add interactivity to your elements.</p>
 
@@ -712,7 +769,7 @@
             </pre>
           </p>
 
-          <h2>Use the CSS Transform Property skewX to Skew an Element Along the X-Axis</h2>
+        <h2 id="S36">Use the CSS Transform Property skewX to Skew an Element Along the X-Axis</h2><a href="#Home">Home</a>
 
           <p>The next function of the <code>transform</code> property is <code>skewX()</code>, which skews the selected element along its X (horizontal) axis by a given degree.</p>
 
@@ -748,7 +805,7 @@
             </pre>
           </p>
 
-          <h2>Use the CSS Transform Property skewY to Skew an Element Along the Y-Axis</h2>
+        <h2 id="S37">Use the CSS Transform Property skewY to Skew an Element Along the Y-Axis</h2><a href="#Home">Home</a>
 
           <p>Given that the <code>skewX()</code> function skews the selected element along the X-axis by a given degree, it is no surprise that the <code>skewY()</code> property skews an element along the Y (vertical) axis.</p>
 
@@ -775,7 +832,7 @@
             </pre>
           </p>
 
-          <h2>Create a Graphic Using CSS</h2>
+        <h2 id="S38">Create a Graphic Using CSS</h2><a href="#Home">Home</a>
 
           <p>By manipulating different selectors and properties, you can make interesting shapes. One of the easier ones to try is a crescent moon shape. For this challenge you need to work with the box-shadow property that sets the shadow of an element, along with the border-radius property that controls the roundness of the element's corners.</p>
 
@@ -809,7 +866,7 @@
             </pre>
           </p>
 
-          <h2>Create a More Complex Shape Using CSS and HTML</h2>
+        <h2 id="S39">Create a More Complex Shape Using CSS and HTML</h2><a href="#Home">Home</a>
 
           <p>One of the most popular shapes in the world is the heart shape, and in this challenge you'll create one using pure CSS. But first, you need to understand the <code>::before</code> and <code>::after</code> pseudo-elements. <code>::before</code> creates a pseudo-element that is the first child of the selected element; <code>::after</code> creates a pseudo-element that is the last child of the selected element. In the following example, a <code>::before</code> pseudo-element is used to add a rectangle to an element with the class <code>heart:</code></p>
 
@@ -876,7 +933,7 @@
             </pre>
           </p>
 
-          <h2>Learn How the CSS @keyframes and animation Properties Work</h2>
+        <h2 id="S40">Learn How the CSS @keyframes and animation Properties Work</h2><a href="#Home">Home</a>
 
           <p>To animate an element, you need to know about the animation properties and the <code>@keyframes</code> rule. The animation properties control how the animation should behave and the <code>@keyframes</code> rule controls what happens during that animation. There are eight animation properties in total. This challenge will keep it simple and cover the two most important ones first:</p>
 
@@ -941,7 +998,7 @@
             </pre>
           </p>
 
-          <h2>Use CSS Animation to Change the Hover State of a Button</h2>
+        <h2 id="S41">Use CSS Animation to Change the Hover State of a Button</h2><a href="#Home">Home</a>
 
           <p>You can use CSS @keyframes to change the color of a button in its hover state.</p>
 
@@ -1002,7 +1059,7 @@
             </pre>
           </p>
 
-          <h2>Modify Fill Mode of an Animation</h2>
+        <h2 id="S42">Modify Fill Mode of an Animation</h2><a href="#Home">Home</a>
 
           <p>That's great, but it doesn't work right yet. Notice how the animation resets after 500ms has passed, causing the button to revert back to the original color. You want the button to stay highlighted.</p>
 
@@ -1038,7 +1095,7 @@
             </pre>
           </p>
 
-          <h2>Create Movement Using CSS Animation</h2>
+        <h2 id="S43">Create Movement Using CSS Animation</h2><a href="#Home">Home</a>
 
           <p>When elements have a specified position, such as fixed or relative, the CSS offset properties right, left, top, and bottom can be used in animation rules to create movement.</p>
 
@@ -1114,7 +1171,7 @@
             </pre>
           </p>
 
-          <h2>Create Visual Direction by Fading an Element from Left to Right</h2>
+        <h2 id="S44">Create Visual Direction by Fading an Element from Left to Right</h2><a href="#Home">Home</a>
 
           <p>For this challenge, you'll change the opacity of an animated element so it gradually fades as it reaches the right side of the screen.</p>
 
@@ -1155,7 +1212,7 @@
             </pre>
           </p>
 
-          <h2>Animate Elements Continually Using an Infinite Animation Count</h2>
+        <h2 id="S45">Animate Elements Continually Using an Infinite Animation Count</h2><a href="#Home">Home</a>
 
           <p>The previous challenges covered how to use some of the animation properties and the <code>@keyframes</code> rule. Another animation property is the <code>animation-iteration-count</code>, which allows you to control how many times you would like to loop through the animation. Here's an example:</p>
 
@@ -1203,7 +1260,7 @@
             </pre>
           </p>
 
-          <h2>Make a CSS Heartbeat using an Infinite Animation Count</h2>
+        <h2 id="S46">Make a CSS Heartbeat using an Infinite Animation Count</h2><a href="#Home">Home</a>
 
           <p>Here's one more continuous animation example with the animation-iteration-count property that uses the heart you designed in a previous challenge.</p>
 
@@ -1285,7 +1342,7 @@
             </pre>
           </p>
 
-          <h2>Animate Elements at Variable Rates</h2>
+        <h2 id="S47">Animate Elements at Variable Rates</h2><a href="#Home">Home</a>
 
           <p>There are a variety of ways to alter the animation rates of similarly animated elements. So far, this has been achieved by applying an animation-iteration-count property and setting @keyframes rules.</p>
 
@@ -1350,7 +1407,7 @@
             </pre>
           </p>
 
-          <h2>Animate Multiple Elements at Variable Rates</h2>
+        <h2 id="S48">Animate Multiple Elements at Variable Rates</h2><a href="#Home">Home</a>
 
           <p>In the previous challenge, you changed the animation rates for two similarly animated elements by altering their @keyframes rules. You can achieve the same goal by manipulating the animation-duration of multiple elements.</p>
 
@@ -1416,7 +1473,7 @@
             </pre>
           </p>
 
-          <h2>Change Animation Timing with Keywords</h2>
+        <h2 id="S49">Change Animation Timing with Keywords</h2><a href="#Home">Home</a>
 
           <p>In CSS animations, the animation-timing-function property controls how quickly an animated element changes over the duration of the animation. If the animation is a car moving from point A to point B in a given time (your animation-duration), the animation-timing-function says how the car accelerates and decelerates over the course of the drive.</p>
 
@@ -1468,7 +1525,7 @@
             </pre>
           </p>
 
-          <h2>Learn How Bezier Curves Work</h2>
+        <h2 id="S50">Learn How Bezier Curves Work</h2><a href="#Home">Home</a>
 
           <p>The last challenge introduced the <code>animation-timing-function</code> property and a few keywords that change the speed of an animation over its duration. CSS offers an option other than keywords that provides even finer control over how the animation plays out, through the use of Bezier curves.</p>
 
@@ -1526,7 +1583,7 @@
             </pre>
           </p>
 
-          <h2>Use a Bezier Curve to Move a Graphic</h2>
+        <h2 id="S51">Use a Bezier Curve to Move a Graphic</h2><a href="#Home">Home</a>
 
           <p>A previous challenge discussed the ease-out keyword that describes an animation change that speeds up first and then slows down at the end of the animation. On the right, the difference between the ease-out keyword (for the blue element) and linear keyword (for the red element) is demonstrated. Similar animation progressions to the ease-out keyword can be achieved by using a custom cubic Bezier curve function.</p>
 
@@ -1575,7 +1632,7 @@
             </pre>
           </p>
 
-          <h2>Make Motion More Natural Using a Bezier Curve</h2>
+        <h2 id="S52">Make Motion More Natural Using a Bezier Curve</h2><a href="#Home">Home</a>
 
           <p>This challenge animates an element to replicate the movement of a ball being juggled. Prior challenges covered the linear and ease-out cubic Bezier curves, however neither depicts the juggling movement accurately. You need to customize a Bezier curve for this.</p>
 
