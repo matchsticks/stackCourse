@@ -8,38 +8,111 @@
         <link href="https://fonts.googleapis.com/css family=Lobster" rel="stylesheet" type="text/css">
 
         <style>
-
             body{
-                width: 1200px;
-                margin: 0px 50px 0px 50px;
-            }
+           width: 1200px;
+           margin: 0px 50px 0px 50px;
+           background-color:hsla(252, 10%, 90%, 0);
+           font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           }
+  
+           pre {
+           font-size: 15px;
+           color:aqua;
+           background-color: black;
+           }
+           
+           .code-div{
+               border: black;
+               background: black;
+               /* margin: 50px 50px 50px 0px; */
+               padding: 15px 15px 15px 15px;
+           }
+  
+           code{
+               /* font-weight: bold; */
+               /* font-size: large; */
+               color: yellow;
+               background: black;
+               font-family: 'Courier New', Courier, monospace;
+               font-weight: 200;
+           }
+           
+  
+           td,th {
+               padding: 2px;
+               text-align:left;
+           }
+  
+           li {
+              font-size: large;
+           }
+  
+           a {
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           }
+  
+           a:hover {
+              font-size: x-large;
+           }
 
-            pre {
-            font-size: 20px;
-            font-weight: bolder;
-            }
-            
-            .code-div{
-                border: black;
-                background: silver;
-                /* margin: 50px 50px 50px 0px; */
-                padding: 15px 15px 15px 15px;
-            }
-
-            code{
-                font-weight: bold;
-                font-size: x-large;
-                background: coral;
-            }
-
-        </style>
+           .blue-text{
+            color: blue;
+           }
+        
+           h2{
+            font-family: sans-serif;
+           }
+  
+       </style>
     </head>
 
     <body>
 
-        <h1>Basic CSS</h1>
+        <h1 id="Home">Basic CSS</h1>
 
-        <h2>Change the color of text</h2>
+        <ul>
+            <li><a href="#S1">Change the color of text</a></li>
+            <li><a href="#S2">Use CSS Selectors to Style Elements</a></li>
+            <li><a href="#S3">Use a CSS Class to Style an Element</a></li>
+            <li><a href="#S4">Style Multiple Elements with a CSS Class</a></li>
+            <li><a href="#S5">Change the Font Size of an Element</a></li>
+            <li><a href="#S6">Set the Font Family of an Element</a></li>
+            <li><a href="#S7">Import a Google Font</a></li>
+            <li><a href="#S8">Specify How Fonts Should Degrade</a></li>
+            <li><a href="#S9">Size Your Images</a></li>
+            <li><a href="#S10">Add Borders Around Your Elements</a></li>
+            <li><a href="#S11">Add Rounded Corners with border-radius</a></li>
+            <li><a href="#S12">Make Circular Images with a <code>border-radius</code></a></li>
+            <li><a href="#S13">Give a Background Color to a div Element</a></li>
+            <li><a href="#S14">Set the id of an Element</a></li>
+            <li><a href="#S15">Use an id Attribute to Style an Element</a></li>
+            <li><a href="#S16">Adjust the Padding of an Element</a></li>
+            <li><a href="#S17">Adjust the Margin of an Element</a></li>
+            <li><a href="#S18">Add a Negative Margin to an Element</a></li>
+            <li><a href="#S19">Add Different Padding to Each Side of an Element</a></li>
+            <li><a href="#S20">Add Different Margins to Each Side of an Element</a></li>
+            <li><a href="#S21">Use Clockwise Notation to Specify the Padding of an Element</a></li>
+            <li><a href="#S22">Use Clockwise Notation to Specify the Margin of an Element</a></li>
+            <li><a href="#S23">Use Attribute Selectors to Style Elements</a></li>
+            <li><a href="#S24">Understand Absolute versus Relative Units</a></li>
+            <li><a href="#S25">Inherit Styles from the Body Element</a></li>
+            <li><a href="#S26">Prioritize One Style Over Another</a></li>
+            <li><a href="#S27">Override Styles in Subsequent CSS</a></li>
+            <li><a href="#S28">Override Class Declarations by Styling ID Attributes</a></li>
+            <li><a href="#S29">Override Class Declarations with Inline Styles</a></li>
+            <li><a href="#S30" >Override All Other Styles by using Important</a></li>
+            <li><a href="#S31">Use Hex Code for Specific Colors</a></li>
+            <li><a href="#S32">Use Abbreviated Hex Code</a></li>
+            <li><a href="#S33">Use RGB values to Color Elements</a></li>
+            <li><a href="#S34">Create a custom CSS Variable</a></li>
+            <li><a href="#S35">Attach a Fallback value to a CSS Variable</a></li>
+            <li><a href="#S36">Improve Compatibility with Browser Fallbacks</a></li>
+            <li><a href="#S37">Inherit CSS Variables</a></li>
+            <li><a href="#S38">Change a variable for a specific area</a></li>
+            <li><a href="#S39">Use a media query to change a variable</a></li>
+        </ul>
+
+        <h2 id="S1">Change the color of text</h2><a href="#Home">Home</a>
 
         <p>Now let's change the color of some of our text.</p>
         <p>The property that is responsible for the color of an element's text is the color style property.</p>
@@ -49,7 +122,7 @@
 
         <p>Note that it is a good practice to end inline style declarations with a ; .</p>
 
-        <h2>Use CSS Selectors to Style Elements</h2>
+        <h2 id="S2">Use CSS Selectors to Style Elements</h2><a href="#Home">Home</a>
 
         <p>With CSS, there are hundreds of CSS properties that you can use to change the way an element looks on your page.</p>
     
@@ -87,7 +160,7 @@
 
         <p>Note that it's important to have both opening and closing curly braces ({ and }) around each element's style rule(s). You also need to make sure that your element's style definition is between the opening and closing style tags. Finally, be sure to add a semicolon to the end of each of your element's style rules.</p>
 
-        <h2>Use a CSS Class to Style an Element</h2>
+        <h2 id="S3">Use a CSS Class to Style an Element</h2><a href="#Home">Home</a>
 
         <p>Classes are reusable styles that can be added to HTML elements.</p>
         <p>Here's an example CSS class declaration:</p>
@@ -107,16 +180,17 @@
             <code> style</code> 
             tag. You can apply a class to an HTML element like this: 
             <code> &#60h2 class="blue-text">CatPhotoApp &#60/h2> </code>
-            . Note that in your CSS style element, class names start with a period. In your HTML elements' class attribute, the class name does not include the period.
+            <h3 class="blue-text">CatPhotoApp</h3>
+            Note that in your CSS style element, class names start with a period. In your HTML elements' class attribute, the class name does not include the period.
         </p>
           
-        <h2>Style Multiple Elements with a CSS Class</h2>
+        <h2 id="S4">Style Multiple Elements with a CSS Class</h2><a href="#Home">Home</a>
 
         <p>
             Classes allow you to use the same CSS styles on multiple HTML elements. You can see this by applying your red-text class to the first p element.
         </p>
 
-        <h2>Change the Font Size of an Element</h2>
+        <h2 id="S5">Change the Font Size of an Element</h2><a href="#Home">Home</a>
 
         <p>Font size is controlled by the <code>font-size</code> CSS property, like this:</p>
 
@@ -128,7 +202,7 @@
             </pre>
         </p>
 
-        <h2>Set the Font Family of an Element</h2>
+        <h2 id="S6">Set the Font Family of an Element</h2><a href="#Home">Home</a>
 
         <p>
             You can set which font an element should use, by using the font-family property.    
@@ -147,7 +221,7 @@
             </pre>
         </p>
 
-        <h2>Import a Google Font</h2>
+        <h2 id="S7">Import a Google Font</h2><a href="#Home">Home</a>
 
         <p>
             In addition to specifying common fonts that are found on most operating systems, we can also specify non-standard, custom web fonts for use on our website. There are many sources for web fonts on the Internet. For this example we will focus on the Google Fonts library.
@@ -177,7 +251,7 @@
             Family names are case-sensitive and need to be wrapped in quotes if there is a space in the name. For example, you need quotes to use the "Open Sans" font, but not to use the Lobster font.
         </p>
 
-        <h2>Specify How Fonts Should Degrade</h2>
+        <h2 id="S8">Specify How Fonts Should Degrade</h2><a href="#Home">Home</a>
 
         <p>
             There are several default fonts that are available in all browsers. These generic font families include monospace, serif and sans-serif.
@@ -204,7 +278,7 @@
             Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords.    
         </p>
 
-        <h2>Size Your Images</h2>
+        <h2 id="S9">Size Your Images</h2><a href="#Home">Home</a>
 
         <p>
             CSS has a property called width that controls an element's width. Just like with fonts, we'll use px (pixels) to specify the image's width.
@@ -224,7 +298,7 @@
             </pre>
         </p>
 
-        <h2>Add Borders Around Your Elements</h2>
+        <h2 id="S10">Add Borders Around Your Elements</h2><a href="#Home">Home</a>
 
         <p>
             CSS borders have properties like style, color and width.
@@ -246,19 +320,19 @@
             </pre>
         </p>
 
-        <h2>Add Rounded Corners with border-radius</h2>
+        <h2 id="S11">Add Rounded Corners with border-radius</h2><a href="#Home">Home</a>
 
         <p>
             Your cat photo currently has sharp corners. We can round out those corners with a CSS property called <code>border-radius</code>.
         </p>
 
-        <h2>Make Circular Images with a <code>border-radius</code></h2>
+        <h2 id="S12">Make Circular Images with a <code>border-radius</code></h2><a href="#Home">Home</a>
 
         <p>
             In addition to pixels, you can also specify the border-radius using a percentage.
         </p>
 
-        <h2>Give a Background Color to a div Element</h2>
+        <h2 id="S13">Give a Background Color to a div Element</h2><a href="#Home">Home</a>
 
         <p>
             You can set an element's background color with the background-color property.
@@ -276,7 +350,7 @@
             </pre>
         </p>
 
-        <h2>Set the id of an Element</h2>
+        <h2 id="S14">Set the id of an Element</h2><a href="#Home">Home</a>
 
         <p>
             In addition to classes, each HTML element can also have an id attribute.
@@ -300,7 +374,7 @@
             </pre>
         </p>
 
-        <h2>Use an id Attribute to Style an Element</h2>
+        <h2 id="S15">Use an id Attribute to Style an Element</h2><a href="#Home">Home</a>
 
         <p>
             One cool thing about id attributes is that, like classes, you can style them using CSS.
@@ -326,7 +400,7 @@
             Note that inside your style element, you always reference classes by putting a . in front of their names. You always reference ids by putting a # in front of their names.
         </p>
 
-        <h2>Adjust the Padding of an Element</h2>
+        <h2 id="S16">Adjust the Padding of an Element</h2><a href="#Home">Home</a>
 
         <p>
             Now let's put our Cat Photo App away for a little while and learn more about styling HTML.
@@ -352,7 +426,7 @@
             When you increase the blue box's padding, it will increase the distance (padding) between the text and the border around it.
         </p>
 
-        <h2>Adjust the Margin of an Element</h2>
+        <h2 id="S17">Adjust the Margin of an Element</h2><a href="#Home">Home</a>
 
         <p>
             An element's margin controls the amount of space between an element's border and surrounding elements.
@@ -366,9 +440,7 @@
             When you increase the blue box's margin, it will increase the distance between its border and surrounding elements.
         </p>
 
-        <h2>
-            Add a Negative Margin to an Element
-        </h2>
+        <h2 id="S18">Add a Negative Margin to an Element</h2><a href="#Home">Home</a>
 
         <p>
             An element's margin controls the amount of space between an element's border and surrounding elements.
@@ -378,7 +450,7 @@
             If you set an element's margin to a negative value, the element will grow larger.
         </p>
 
-        <h2>Add Different Padding to Each Side of an Element</h2>
+        <h2 id="S19">Add Different Padding to Each Side of an Element</h2><a href="#Home">Home</a>
 
         <p>
             Sometimes you will want to customize an element so that it has different amounts of padding on each of its sides.
@@ -388,7 +460,7 @@
             CSS allows you to control the padding of all four individual sides of an element with the padding-top, padding-right, padding-bottom, and padding-left properties.
         </p>
 
-        <h2>Add Different Margins to Each Side of an Element</h2>
+        <h2 id="S20">Add Different Margins to Each Side of an Element</h2><a href="#Home">Home</a>
 
         <p>
             Sometimes you will want to customize an element so that it has a different margin on each of its sides.
@@ -398,7 +470,7 @@
             CSS allows you to control the margin of all four individual sides of an element with the margin-top, margin-right, margin-bottom, and margin-left properties.
         </p>
         
-        <h2>Use Clockwise Notation to Specify the Padding of an Element</h2>
+        <h2 id="S21">Use Clockwise Notation to Specify the Padding of an Element</h2><a href="#Home">Home</a>
 
         <p>
             Instead of specifying an element's padding-top, padding-right, padding-bottom, and padding-left properties individually, you can specify them all in one line, like this:
@@ -414,7 +486,7 @@
             These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific padding instructions.
         </p>
 
-        <h2>Use Clockwise Notation to Specify the Margin of an Element</h2>
+        <h2 id="S22">Use Clockwise Notation to Specify the Margin of an Element</h2><a href="#Home">Home</a>
 
         <p>
             Let's try this again, but with margin this time.
@@ -434,7 +506,7 @@
             These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.
         </p>
 
-        <h2>Use Attribute Selectors to Style Elements</h2>
+        <h2 id="S23">Use Attribute Selectors to Style Elements</h2><a href="#Home">Home</a>
 
         <p>
             You have been adding id or class attributes to elements that you wish to specifically style. These are known as ID and class selectors. There are other CSS Selectors you can use to select custom groups of elements to style.
@@ -456,7 +528,7 @@
             </pre>
         </p>
 
-        <h2>Understand Absolute versus Relative Units</h2>
+        <h2 id="S24">Understand Absolute versus Relative Units</h2><a href="#Home">Home</a>
 
         <p>
             The last several challenges all set an element's margin or padding with pixels (px). Pixels are a type of length unit, which is what tells the browser how to size or space an item. In addition to px, CSS has a number of different length unit options that you can use.
@@ -474,7 +546,7 @@
             Note: There are several relative unit options that are tied to the size of the viewport. They are covered in the Responsive Web Design Principles section.
         </p>
 
-        <h2>Inherit Styles from the Body Element</h2>
+        <h2 id="S25">Inherit Styles from the Body Element</h2><a href="#Home">Home</a>
 
         <p>
             Now we've proven that every HTML page has a body element, and that its body element can also be styled with CSS.
@@ -484,7 +556,7 @@
             Remember, you can style your body element just like any other HTML element, and all your other elements will inherit your body element's styles.
         </p>
 
-        <h2>Prioritize One Style Over Another</h2>
+        <h2 id="S26">Prioritize One Style Over Another</h2><a href="#Home">Home</a>
 
         <p>
             Sometimes your HTML elements will receive multiple styles that conflict with one another.
@@ -517,7 +589,7 @@
             </pre>
         </p>
 
-        <h2>Override Styles in Subsequent CSS</h2>
+        <h2 id="S27">Override Styles in Subsequent CSS</h2><a href="#Home">Home</a>
 
         <p>Our pink-text class overrode our body element's CSS declaration!</p>
         
@@ -548,7 +620,7 @@
             </pre>
         </p>
 
-        <h2>Override Class Declarations by Styling ID Attributes</h2>
+        <h2 id="S28">Override Class Declarations by Styling ID Attributes</h2><a href="#Home">Home</a>
 
         <p>We just proved that browsers read CSS from top to bottom in order of their declaration. That means that, in the event of a conflict, the browser will use whichever CSS declaration came last. Notice that if we even had put blue-text before pink-text in our h2 element's classes, it would still look at the declaration order and not the order of their use!</p>
 
@@ -579,7 +651,7 @@
             </pre>
         </p>
 
-        <h2>Override Class Declarations with Inline Styles</h2>
+        <h2 id="S29">Override Class Declarations with Inline Styles</h2><a href="#Home">Home</a>
 
         <p>So we've proven that id declarations override class declarations, regardless of where they are declared in your style element CSS.</p>
 
@@ -607,7 +679,7 @@
             </pre>
         </p>
 
-        <h2>Override All Other Styles by using Important</h2>
+        <h2 id="S30">Override All Other Styles by using Important</h2><a href="#Home">Home</a>
 
         <p>Yay! We just proved that inline styles will override all the CSS declarations in your style element.</p>
 
@@ -639,7 +711,7 @@
             </pre>
         </p>
 
-        <h2>Use Hex Code for Specific Colors</h2>
+        <h2 id="S31">Use Hex Code for Specific Colors</h2><a href="#Home">Home</a>
 
         <p>Did you know there are other ways to represent colors in CSS? One of these ways is called hexadecimal code, or hex code for short.</p>
 
@@ -649,11 +721,11 @@
             In CSS, we can use 6 hexadecimal digits to represent colors, two each for the red (R), green (G), and blue (B) components. For example, <code>&#35 000000</code> is black and is also the lowest possible value. You can find more information about the RGB color system here.
         </p>
 
-        <h2>Use Abbreviated Hex Code</h2>
+        <h2 id="S32">Use Abbreviated Hex Code</h2><a href="#Home">Home</a>
 
         <p>Instead of two characters for each colors we can use only one and browsers will read them but the amount of colors that can be listed with this notation is 4000 instead of 16 million</p>
 
-        <h2>Use RGB values to Color Elements</h2>
+        <h2 id="S33">Use RGB values to Color Elements</h2><a href="#Home">Home</a>
 
         <p>Another way you can represent colors in CSS is by using RGB values.</p>
 
@@ -665,7 +737,7 @@
 
         <p><code>rgb(255, 255, 255)</code></p>
 
-        <h2>Create a custom CSS Variable</h2>
+        <h2 id="S34">Create a custom CSS Variable</h2><a href="#Home">Home</a>
         
         <p>To create a CSS variable, you just need to give it a name with two hyphens in front of it and assign it a value like this:</p>
 
@@ -681,7 +753,7 @@
 
         <p>This will change the background of whatever element you are targeting to gray because that is the value of the --penguin-skin variable. Note that styles will not be applied unless the variable names are an exact match.</p>
 
-        <h2>Attach a Fallback value to a CSS Variable</h2>
+        <h2 id="S35">Attach a Fallback value to a CSS Variable</h2><a href="#Home">Home</a>
 
         <p>When using your variable as a CSS property value, you can attach a fallback value that your browser will revert to if the given variable is invalid.</p>
 
@@ -693,7 +765,7 @@
 
         <p>This will set background to black if your variable wasn't set. Note that this can be useful for debugging.</p>
 
-        <h2>Improve Compatibility with Browser Fallbacks</h2>
+        <h2 id="S36">Improve Compatibility with Browser Fallbacks</h2><a href="#Home">Home</a>
 
         <p>When working with CSS you will likely run into browser compatibility issues at some point. This is why it's important to provide browser fallbacks to avoid potential problems.</p>
 
@@ -720,7 +792,7 @@
             </pre>
         </p>
 
-        <h2>Inherit CSS Variables</h2>
+        <h2 id="S37">Inherit CSS Variables</h2><a href="#Home">Home</a>
 
         <p>When you create a variable, it is available for you to use inside the selector in which you create it. It also is available in any of that selector's descendants. This happens because CSS variables are inherited, just like ordinary properties.</p>
 
@@ -741,7 +813,7 @@
             </pre>
         </p>
 
-        <h2>Change a variable for a specific area</h2>
+        <h2 id="S38">Change a variable for a specific area</h2><a href="#Home">Home</a>
 
         <p>When you create your variables in <code>:root</code> they will set the value of that variable for the whole page.</p>
 
@@ -776,7 +848,7 @@
             </pre>
         </p>
 
-        <h2>Use a media query to change a variable</h2>
+        <h2 id="S39">Use a media query to change a variable</h2><a href="#Home">Home</a>
 
         <p>CSS Variables can simplify the way you use media queries.</p>
 
