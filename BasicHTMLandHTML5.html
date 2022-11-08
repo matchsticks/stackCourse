@@ -7,46 +7,84 @@
         <meta name="viewport" content="width=device-width,  initial-scale=1.0">
 
         <style>
-            body{
+             body{
            width: 1200px;
            margin: 0px 50px 0px 50px;
+           background-color:hsla(252, 10%, 90%, 0);
            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
            }
-
+  
            pre {
-           font-size: 20px;
-           font-weight:100;
-           color: aliceblue;
-           background-color: hsl(248, 40%, 65%);
+           font-size: 15px;
+           color:aqua;
+           background-color: black;
+           margin: 50px;
+           padding: 5
+           0px;
            }
            
            .code-div{
                border: black;
-               background: silver;
+               background: black;
                /* margin: 50px 50px 50px 0px; */
                padding: 15px 15px 15px 15px;
            }
-
+  
            code{
                /* font-weight: bold; */
                /* font-size: large; */
-               color: antiquewhite;
-               background: hsl(248, 39%, 39%);
+               color: yellow;
+               background: black;
                font-family: 'Courier New', Courier, monospace;
+               font-weight: 200;
            }
            
-
+  
            td,th {
                padding: 2px;
                text-align:left;
+           }
+  
+           li {
+              font-size: large;
+           }
+  
+           a {
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           }
+  
+           a:hover {
+              font-size: x-large;
+           }
+
+           .blue-text{
+            color: blue;
+           }
+        
+           h2{
+            font-family: sans-serif;
+           }
+
+           .important-text{
+            color: red;
+            font-weight: bold;
            }
 
        </style>
     </head>
     <body>
-    <h2>Basic HTML and HTML5</h2>
+    <h1>Basic HTML and HTML5</h1>
 
-   <h2>CatPhotoApp</h2>
+    <ul id="home">
+        <li><a href="#S1">CatPhotoApp</a></li>
+        <li><a href="#S2">Checkboxes</a></li>
+        <li><a href="#S3">Use the value attribute with Radio Buttons and Checkboxes</a></li>
+        <li><a href="#S4">Check Radio Buttons and Checkboxes by Default</a></li>
+        <li><a href="#S5">Declare the Doctype of an HTML Document</a></li>
+    </ul>
+
+   <h2 id="S1">CatPhotoApp</h2>
+   <a href="#home">Home</a>
         
         <p>You can use radio buttons for questions where you want the user to only give you one answer out of multiple options.</p>
 
@@ -98,7 +136,8 @@
             <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
         </label>              
 
-        <h2>Checkboxes</h2>
+        <h2 id="S2">Checkboxes</h2>
+        <a href="#home">Home</a>
 
         <p>Forms commonly use checkboxes for questions that may have more than one answer.</p>
         
@@ -118,7 +157,8 @@
             Add to your form a set of three checkboxes. Each checkbox should be nested within its own label element. All three should share the name attribute of personality.
         </p>
 
-        <h2>Use the value attribute with Radio Buttons and Checkboxes</h2>
+        <h2 id="S3">Use the value attribute with Radio Buttons and Checkboxes</h2>
+        <a href="#home">Home</a>
 
         <p>When a form gets submitted, the data is sent to the server and includes entries for the options selected. Inputs of type <code>radio</code> and <code>checkbox</code> report their values from the <code> value </code>attribute.</p>
 
@@ -139,7 +179,8 @@
             If you omit the value attribute, the submitted form data uses the default value, which is on. In this scenario, if the user clicked the "indoor" option and submitted the form, the resulting form data would be indoor-outdoor=on, which is not useful. So the value attribute needs to be set to something to identify the option.
         </p>
 
-        <h2>Check Radio Buttons and Checkboxes by Default</h2>
+        <h2 id="S4">Check Radio Buttons and Checkboxes by Default</h2>
+        <a href="#home">Home</a>
 
         <p>ou can set a checkbox or radio button to be checked by default using the <code>
         checked</code> attribute.
@@ -158,7 +199,8 @@
         <code></div></code>.
         </p>
 
-        <h2>Declare the Doctype of an HTML Document</h2>
+        <h2 id="S5">Declare the Doctype of an HTML Document</h2>
+        <a href="#home">Home</a>
 
         <p>
             The challenges so far have covered specific HTML elements and their uses. However, there are a few elements that give overall structure to your page, and should be included in every HTML document.
@@ -184,13 +226,25 @@
             Here's an example of the page structure. Your HTML code would go in the space between the two html tags.
         </p>
 
-        <h2>Define the Head and Body of an HTML Document</h2>
+        <h2 id="S6">Define the Head and Body of an HTML Document</h2>
+        <a href="#home">Home</a>
 
         <p>You can add another level of organization in your HTML document within the html tags with the head and body elements. Any markup with information about your page would go into the head tag. Then any markup with the content of the page (what displays for a user) would go into the body tag.</p>
 
         <p>Metadata elements, such as link, meta, title, and style, typically go inside the head element.</p>
 
         <p>Here's an example of a page's layout:</p>
+
+        
+        <h2 id="S7">Uncomment HTML</h2>
+        <a href="home">Home</a>
+
+        <p>Commenting is a way that you can leave comments for other developers within your code without affecting the resulting output that is displayed to the end user.</p>
+
+        <p> Commenting is also a convenient way to make code inactive without having to delete it entirely.</p>
+
+        <p>Comments in HTML start with < !-- and end with a --> </p>
+
 
         
 
